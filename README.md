@@ -4,12 +4,11 @@ leongaban.com version 8
 
 <a href="https://twitter.com/leongaban">@leongaban</a>
 
-[![Build Status](https://travis-ci.org/linnovate/mean.svg?branch=master)](https://travis-ci.org/linnovate/mean)
-[![Dependencies Status](https://david-dm.org/linnovate/mean.svg)](https://david-dm.org/linnovate/mean)
 [![Built with Gulp](https://raw.githubusercontent.com/gulpjs/gulp/e2dd2b6c66409f59082c24585c6989244793d132/built-with-gulp.png)](http://gulpjs.com/)
-[![Gitter](https://badges.gitter.im/JoinChat.svg)](https://gitter.im/linnovate/mean?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-# [![MEAN Logo](http://mean.io/system/assets/img/logos/meanlogo.png)](http://mean.io/) M.E.A.N Stack
+![Leon Gaban](https://raw.github.com/leongaban/leongaban-com/master/leongaban.png)
+
+<strong>Leongaban.com version 8 (under development) version 7 here: http://leongaban.com</strong>
 
 MEAN is a framework for an easy starting point with [MongoDB](http://www.mongodb.org/), [Node.js](http://www.nodejs.org/), [Express](http://expressjs.com/), and [AngularJS](http://angularjs.org/) based applications. It is designed to give you a quick and organized way to start developing MEAN based web apps with useful modules like Mongoose and Passport pre-bundled and configured. We mainly try to take care of the connection points between existing popular frameworks and solve common integration problems.
 ## Prerequisites
@@ -38,59 +37,6 @@ MEAN is an acronym for *M*ongo, *E*xpress.js , *A*ngular.js and *N*ode.js
 * <a href="http://mongoosejs.com/">Mongoose</a> - The mongodb node.js driver in charge of providing elegant mongodb object modeling for node.js
 * <a href="http://passportjs.org/">Passport</a> - An authentication middleware for Node.js which supports authentication using a username and password, Facebook, Twitter, and more.
 
-
-## CLI
-### Overview
-
-The MEAN CLI is a simple Command Line Interface for installing and managing MEAN applications. As a core module of the Mean.io project, it provides a number of useful tools to make interaction with your MEAN application easier, with features such as: scaffolding, module creation and admin, status checks, and user management.
-```bash
-$ mean
-$ mean --help
-$ mean help
-```
-  <code>mean help</code> can also be used in conjunction with any command to get more information about that particular functionality. For example, try <code>mean help init</code> to see the options for init
-```bash
-$ mean help [command]
-```
-
-### Packages
-#### Management
- <p class="alert alert-warning">All of the remaining of the commands must be run from the root folder of your MEAN application.</p>
-  <p>Contributed MEAN packages can be installed or uninstalled via the CLI. Also, currently installed modules can be viewed with the <code>list</code> command.</p>
-
-```bash
-$ mean list
-$ mean install <module>
-$ mean uninstall <module>
-```
-
-<p class="alert alert-info">Mean packages installed via the installer are found in <i>/node_modules</i></p>
-#### Search
-To find new packages run the *mean search* command
-```bash
-$ mean search [packagename]
-```
-`mean search` will return all of the available packages, `mean search [packagename]` will filter the search results.
-
-#### Scaffolding
-To create a new MEAN app, run <code>mean init</code>. Name for the application is optional. If no name is provided, "mean" is used. The MEAN project will be cloned from GitHub into a directory of the application name.
-```bash
-$ mean init [name]
-$ cd [name] && npm install
-```
-<p class="alert alert-info">Note: <a href="http://git-scm.com/downloads">git</a> must be installed for this command to work properly.</p>
-
-### Misc
-<h4>Status</h4>
-<p>Check the database connection for a particular environment (e.g. development (default), test, production) and make sure that the meanio command line version is up to date.</p>
-```bash
-$ mean status
-```
-<h4>Docs</h4>
-<p>A simple shortcut to open the mean documentation in your default browser.</p>
-```bash
-$ mean docs
-```
 
 **Server**
 
