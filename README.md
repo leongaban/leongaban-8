@@ -2,18 +2,20 @@ leongaban.com version 8
 ================
 <strong>Leon Gaban's portfolio</strong>
 
-<a href="https://twitter.com/leongaban">@leongaban</a>
-
 [![Built with Gulp](https://raw.githubusercontent.com/gulpjs/gulp/e2dd2b6c66409f59082c24585c6989244793d132/built-with-gulp.png)](http://gulpjs.com/)
 
 ![Leon Gaban](https://raw.github.com/leongaban/leongaban-com/master/leongaban.png)
 
 <strong>Leongaban.com version 8 (under development) version 7 here: http://leongaban.com</strong>
 
-MEAN is a framework for an easy starting point with [MongoDB](http://www.mongodb.org/), [Node.js](http://www.nodejs.org/), [Express](http://expressjs.com/), and [AngularJS](http://angularjs.org/) based applications. It is designed to give you a quick and organized way to start developing MEAN based web apps with useful modules like Mongoose and Passport pre-bundled and configured. We mainly try to take care of the connection points between existing popular frameworks and solve common integration problems.
-## Prerequisites
-* *MongoDB* - <a href="http://www.mongodb.org/downloads">Download</a> and Install mongodb - <a href="http://docs.mongodb.org/manual">Checkout their manual</a> if you're just starting.
-* *Node.js* - <a href="http://nodejs.org/download/">Download</a> and Install Node.js, nodeschool has free <a href=" http://nodeschool.io/#workshoppers">node tutorials</a> to get you started.
+<p>I have a passion for crafting user experiences, if the web was built with LEGO I’d probably be using those some how.While designing or coding I prefer listening to ambient music or a podcast, I follow the people over at scotch.io, css-tricks and read on smashing magazine to stay updated in the industry. Also I'm constantly absorbing content on the newest technologies. Currently on the path of the full <a href="http://mean.io/">MEAN stack</a> ninjaneer.</p>
+
+<p>My favorite code editor is Sublime Text 2. For pleasure I listen to a multitude of podcasts including Radiolabs, Let's talk Bitcoin, Hardcore History and the Joe Rogan podcast, for hobbies I love training in Brazillian jui-jitsu and Bikram yoga. You can follow me on Twitter <a href="https://twitter.com/leongaban">@leongaban</a></p>
+
+## Social Profiles
+<a href="http://stackoverflow.com/users/168738/leon-gaban">Stackoverflow profile</a>
+<a href="http://codepen.io/leongaban/">Codepen</a>
+<a href="https://www.linkedin.com/in/leongaban">LinkedIn</a>
 
 
 ## Technologies
@@ -32,10 +34,6 @@ MEAN is an acronym for *M*ongo, *E*xpress.js , *A*ngular.js and *N*ode.js
 <dt>Node.js</dt>
 <dd>Start by going through Node.js Official Website and this StackOverflow thread, which should get you going with the Node.js platform in no time.</dd>
 </dl>
-
-### Additional Tools
-* <a href="http://mongoosejs.com/">Mongoose</a> - The mongodb node.js driver in charge of providing elegant mongodb object modeling for node.js
-* <a href="http://passportjs.org/">Passport</a> - An authentication middleware for Node.js which supports authentication using a username and password, Facebook, Twitter, and more.
 
 
 **Server**
