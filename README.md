@@ -8,7 +8,9 @@ leongaban.com version 8
 
 <strong>Leongaban.com version 8 (under development) version 7 here: http://leongaban.com</strong>
 
-<p>I have a passion for crafting user experiences, if the web was built with LEGO I’d probably be using those some how.While designing or coding I prefer listening to ambient music or a podcast, I follow the people over at scotch.io, css-tricks and read on smashing magazine to stay updated in the industry. Also I'm constantly absorbing content on the newest technologies. Currently on the path of the full <a href="http://mean.io/">MEAN stack</a> ninjaneer.</p>
+<p>If the web was built with LEGO I’d probably be using those some how, I have a passion for crafting pleasing user experiences.</p>
+
+<p>I'm constantly absorbing content on the newest technologies. Currently on the path of the full <a href="http://mean.io/">MEAN stack</a> ninjaneer.</p>
 
 <p>My favorite code editor is Sublime Text 2. For pleasure I listen to a multitude of podcasts including Radiolabs, Let's talk Bitcoin, Hardcore History and the Joe Rogan podcast, for hobbies I love training in Brazillian jui-jitsu and Bikram yoga. You can follow me on Twitter <a href="https://twitter.com/leongaban">@leongaban</a></p>
 
