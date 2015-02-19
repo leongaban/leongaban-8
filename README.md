@@ -3,7 +3,7 @@ leongaban.com version 8
 <strong>Leon Gaban's portfolio</strong>
 
 [![Built with Gulp](https://raw.githubusercontent.com/gulpjs/gulp/e2dd2b6c66409f59082c24585c6989244793d132/built-with-gulp.png)](http://gulpjs.com/)
-<a href="https://gratipay.com/leongaban/"><img src="//img.shields.io/gratipay/leongaban.svg"></a>
+<a href="https://gratipay.com/leongaban/"><img src="http://img.shields.io/gratipay/leongaban.svg"></a>
 
 ![Leon Gaban](https://raw.github.com/leongaban/leongaban-com/master/leongaban.png)
 
