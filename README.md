@@ -4,7 +4,7 @@ leongaban.com version 8
 
 [![Built with Gulp](https://raw.githubusercontent.com/gulpjs/gulp/e2dd2b6c66409f59082c24585c6989244793d132/built-with-gulp.png)](http://gulpjs.com/)
 
-![Leon Gaban](https://raw.github.com/leongaban/leongaban-com/master/leongaban.png)
+![Leon Gaban](https://raw.githubusercontent.com/leongaban/leongaban-8/master/assets/imgs/logo%402x.png)
 
 <strong>Leongaban.com version 8 (under development) version 7 here: http://leongaban.com</strong>
 
