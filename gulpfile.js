@@ -31,20 +31,20 @@ function errorlog(err){
 /** Main Styles */
 /** ------------------------------------------------------------------------- */
 gulp.task('css', function() {
-    return sass('sass/main_web.scss', {
+    return sass('bower_components/sass-smacss/sass/leongaban.scss', {
         // noCache: true,
         style: 'compressed' 
     })
     .pipe(sourcemaps.init())
     .on('error', errorlog)
     .pipe(sourcemaps.write('./maps'))
-    .pipe(gulp.dest('css/'))
+    .pipe(gulp.dest('assets/css/'))
 });
 
 /** Development watch */
 /** ------------------------------------------------------------------------- */
 gulp.task('watch', function() {
-    gulp.watch('sass/**/*.scss', ['css']).on('change', function(file) {
+    gulp.watch('bower_components/sass-smacss/sass/**/*.scss', ['css']).on('change', function(file) {
         gutil.log(gutil.colors.cyan.bold('CSS updated' + ' (' + file.path + ')'));
     });
 });

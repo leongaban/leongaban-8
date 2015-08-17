@@ -1,0 +1,176 @@
+.col-content.search h1 {
+    color: #00b099;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0 0 10px;
+}
+.container.ipcore-page .col-content.search-results .green {
+	margin: 0 8px 0 0;
+}
+.container.ipcore-page  .col-content.search-results .search {
+	margin: 25px 0 0 0;
+}
+.container.ipcore-page  .col-content.search-results .search.related-ip h1 {
+	margin: 0 0 13px;
+}
+.container.ipcore-page  .col-content.search-results .search.related-ip li {
+	list-style: none;
+	background: url('../img/icon_blue_chip.png') no-repeat center left;
+	padding: 0 0 0 32px;
+}
+.container.ipcore-page .col-content.search-results .view-all {
+    font-style: italic;
+	color: #666;
+}
+.container.ipcore-page .col-content.search-results .search p {
+	margin: 0;
+}
+.container.ipcore-page .col-content.search-results .search.whitepapers .green {
+	font-size: 13px;
+}
+.container.ipcore-page .col-content.search-results .search.whitepapers img {
+	padding: 4px 10px 5px 0;
+	float: left;
+	
+}
+.container.ipcore-page .col-content.search-results .search.whitepapers .orange a {
+	color: #f27619;
+	font-style: italic;
+}
+
+.container.ipcore-page .col-content.search-results .search.blogs img {
+    float: left;
+    padding: 0 10px 5px 0;
+}
+.container.ipcore-page .col-content.search-results .search.blogs li {
+    margin: 0 0 16px 0;
+	
+}
+.container.ipcore-page .col-content.search-results .search  .dashed-divider {
+	margin: 8px auto;
+}
+.container.ipcore-page .col-content.search-results .search.webcasts img {
+    float: left;
+    padding: 0 10px 5px 0;
+}
+.container.ipcore-page .col-content.search-results .search.webcasts li {
+    margin: 0 0 24px 0;
+	
+}
+.container.ipcore-page .col-content.search-results .search.tv img {
+    float: left;
+    padding: 0 10px 5px 0;
+}
+.container.ipcore-page .col-content.search-results .search.tv li {
+    margin: 0 0 24px 0;
+	
+}
+.container.ipcore-page .column .col-content.refine-search {
+  margin: -38px auto 10px;
+  padding: 44px 10px 10px;
+  z-index: 0;
+}
+
+.container.ipcore-page .column .col-content.refine-search #search-btn  {
+    cursor: pointer;
+    height: 30px;
+    position: relative;
+    right: 2px;
+    width: 39px;
+	float:left;
+	top: 10px;
+}
+
+#refine_search #refined_by{
+	color: #6c6c6c;
+	font-weight: normal;
+}
+.selected_keywords {
+	float: left;
+}
+.remove_keywords {
+	float: right;
+}
+.container.ipcore-page .column .col-content.refine-search #keyword {
+  float: left;
+  height: 28px;
+  margin: 10px 0;
+  padding: 0;
+  width: 76%;
+}
+.container.ipcore-page .column .col-content.refine-search label {
+  color: #4EA6D3;
+  float: left;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0;
+  width: 100%;
+}
+.container.ipcore-page .column .col-content.refine-search input {
+  margin: 5px 5px 5px 0;
+}
+.container.ipcore-page .column .col-content.refine-search .ip_option .ip_check_boxes label {
+    color: rgb(109, 109, 109);
+    float: left;
+    font-weight: 400;
+	margin: 2px 0;
+}
+.container.ipcore-page .column .col-content.refine-search select {
+  background: none repeat scroll 0 0 #F4F4F4;
+  border: 1px solid #AFAFAF;
+  color: #a5a5a5;
+  font-size: 13px;
+  height: 27px;
+
+}
+.container.ipcore-page .column .col-content.refine-search .ip_option .ip_option_name {
+	font-weight: bold;
+	margin: 0 0 5px 0;
+}
+.container.ipcore-page .column .col-content.refine-search .ip_option.node .ip_check_boxes label {
+
+	width: 33%;
+}
+.container.ipcore-page .column .col-content.refine-search .ip_option.foundry .ip_check_boxes label {
+	width: 48%;
+}
+.container.ipcore-page .column .col-content.refine-search .ip_option.foundry .ip_check_boxes input {
+	float: left;
+}
+.container.ipcore-page .column .col-content.refine-search .ip_option.category .ip_option_name  {
+	width: 90%;
+	margin: 10px 0 5px 0;
+}
+.container.ipcore-page .column .col-content.refine-search .ip_option select  {
+	width: 60%;
+}
+.container.ipcore-page .column .col-content.refine-search .ip_option.vendors .ip_option_name  {
+	width: 90%;
+	margin: 10px 0 5px 0;
+}
+.container.ipcore-page .column .col-content.refine-search .ip_option.portability .ip_option_name {
+	width: 90%;
+}
+.container.ipcore-page .column .col-content.refine-search .ip_option.portability .ip_check_boxes label {
+	width: 48%;
+}
+.container.ipcore-page .column .col-content.refine-search .ip_option.quality .ip_check_boxes label {
+	width: 100%;
+}
+.container.ipcore-page .column .col-content.refine-search .ip_option.quality .ip_option_name {
+	width: 100%;
+}
+.container.ipcore-page .column .col-content.refine-search #submit {
+  background: url("../img/btn-search-bg.png") no-repeat scroll 0 0 transparent;
+  color: rgb(172, 217, 242);
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  height: 31px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 112px;
+  border: none;
+}

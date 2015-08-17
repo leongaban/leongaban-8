@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Welcome to Shabang </title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="" />
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link href="css/shabang.css" type="text/css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
+    <![endif]-->
+    <script type='text/javascript' src="js/jquery-2.0.0.min.js"></script>
+    <script type='text/javascript' src='js/registration.js'></script>
+</head>
+
+<body>
+
+<div class="layout">
+
+    <div class="header">
+
+        <div class="head-wrapper">
+
+            <div class="navigation">
+
+                <div class="logo">
+                    <img src="img/logo.png" class="user-action" data-btn="home" data-pane="home" title="Shabang" alt="Shabang"/>
+                </div><!-- logo -->
+
+                <div class="head-search">
+                    <input class="txtinput" type="text"/>
+                    <a href="#"><img src="img/search_button.png" alt="search"/></a>
+                </div><!-- head-search -->
+
+                <div class="search_view_selection">
+                    <div class="search-view-text">View:</div> <select id="search-dropdown" sb="83369732" style="display: block;">
+                        <option value="1" selected="selected">Everything</option>
+                        <option value="2" selected="selected">Something</option>
+                        <option value="3" selected="selected">Nothing</option>
+                    </select>
+                </div><!-- search_view_selection -->
+
+                <div id="user-actions">
+                    <ul>
+                        <li class="btn-blue user-action" data-btn="login" data-pane="login">Log In</li>
+                        <li class="btn-purple user-action" data-btn="signup" data-pane="signup">Sign Up</li>
+                    </ul>
+                </div><!-- user-actions -->
+
+                <div id="search-745-div">
+                    <div id="search-field-745">
+                        <input class="search745" type="text">
+                    </div>
+                    <div id="search-btn-745" class="user-action" data-btn="search">
+                        <img src="img/search_button_big.png" alt="search"/>
+                    </div>
+                </div>
+
+            </div><!-- navigation -->
+
+            <div class="options">
+                <div class="logo-mobile">
+                    <img src="img/logo.png" class="user-action" data-btn="home" data-pane="home" title="Shabang" alt="Shabang"/>
+                </div><!-- logo -->
+
+                <div class="mobile-640-nav">
+                    <div id="search-btn-640" class="user-action" data-btn="search-mobile">
+                        <img src="img/search-btn-mobile.png" alt="search"/>
+                    </div>
+
+                    <div class="btn-blue user-action mobile-user-options" data-btn="mobile-user-options" data-pane="home">
+                        <img src="img/mobile-profile-head-icon.png" title="Options" alt="Options"/>
+                    </div>
+                </div><!-- mobile-640-nav -->
+            </div><!-- options -->
+
+            <div class="options-menu">
+                <ul>
+                    <li class="btn-blue">My Profile</li>
+                    <li class="btn-blue">Privacy</li>
+                    <li class="btn-blue">Logout</li>
+                </ul>
+            </div>
+
+            <div class="options-search">
+                <div class="options-search-dropdown-mobile">
+                    <div class="search-view-text" style="float:left; color:#333;">View: </div> <select id="search-dropdown" sb="83369732" style="display: block;">
+                        <option value="1" selected="selected">Everything</option>
+                        <option value="2" selected="selected">Something</option>
+                        <option value="3" selected="selected">Nothing</option>
+                    </select>
+                </div>
+
+                <div class="options-search-bar">
+                    <div class="options-search-bar-left">
+                        <input class="mobile-search-input" type="text"/>
+                    </div>
+
+                    <div class="options-search-bar-right">
+                        <img src="img/search-btn-mobile.png" alt="search"/>
+                    </div>
+                </div>
+            </div><!-- options-search -->
+
+        </div><!-- head-wrapper -->
+
+    <div class="header-bot-border"></div>
+    </div><!-- header -->
+
+    <div id="UpdatePanel">
+
+        <div id="panel-role-talent" class="registration-page" style="display:block;">
+
+            <div class="page-header">
+                <div class="page-description">
+                    <h1>Upload a Photo</h1>
+                    <!-- <p>Let us know more about you, so that we can deliver content and opportunities that best suits you</p> -->
+                </div>
+            </div>
+
+            <div class="pagination">
+                <div class="page">1</div>
+                <div class="page">2</div>
+                <div class="selected page">3</div>
+            </div>
+
+            <div class="photo-upload-wrapper">
+
+                <div class="photo-thumbnail-preview">
+                    <div class="thumb-container">
+
+                        <div class="thumb-pic-window"><img id="pImage" src="img/default-talent-3.png" alt="Default Talent Photo"></div>
+                        <div class="thumb-details" id="uploadFileInfo">
+                            <div class="thumb-profile-name" id="users_fName"> leongaban</div>
+                            <p>Filesize: <span id="lblUploadFilesize">0</span></p>
+                            <p>Avaliable Space: <span>50Mb</span></p>
+                        </div>
+
+                        <div id="progress" class="uploadProgress" style="width:100%;float:left;margin-top:13px;">
+                            <div class="bar" style="float:left;width:0%;height:25px;background:url('img/progress_bar.gif')"></div>
+                        </div>
+
+                    </div><!-- thumb-container -->
+                </div><!-- photo-thumbnail-preview -->
+
+                <div class="profile-crop-area">
+
+                    <div class="profile-crop-box">
+
+                        <div id="crop_balloon">
+                            <p>This is your current<br/>
+                            Profile Photo!<br/><br/>
+
+                            Click Upload Photo<br/>
+                            to change it...</p>
+                            <!-- <img src="/images/balloon_crop_img.png"/> -->
+                        </div>
+
+                        <div class="uploaded-photo-preview" id="cropArea">
+                            <!-- <img id="default-talent" src="/images/default-talent-3-big.png" /> -->
+                            <a href="#"><img id="cropImg" class="cropImg" src="img/crop_default.png"></a>
+                        </div>
+
+                        <!-- <div class="uploaded-photo-preview" id="cropArea">
+                            <a href="#"><img id="cropImg" class="cropImg" src="img/default-talent-3-big.png"></a>
+                        </div> -->
+
+                        <div class="photo-option-buttons" style="width:auto;">
+
+                            <div class="input">
+                                <input type="file" id="uploadFile" value="Upload Photo" class="file">
+                                <input type="hidden" name="imgSrc" id="imgSrc">
+                            </div>
+
+                            <ul>
+                                <li class="btn-purple" id="btn-delete-photo">Delete</li>
+                                <li class="btn-purple">Upload Photo</li>
+                                <li id="btnSkip" class="btn-purple">Skip</li>
+                            </ul>
+
+                        </div><!-- photo-option-buttons -->
+
+                    </div><!-- profile-crop-box -->
+
+                </div><!-- profile-crop-area -->
+
+            </div><!-- photo-upload-wrapper -->
+
+            <div class="registration-navigation">
+                <div class="back-button"><a href="reg_role_talent.html">« back</a></div>
+                <div class="next-button btn-gray">Next</div>
+                <!-- After Validation Add class btn-purple-->
+                <!-- <div class="next-button btn-purple">Next</div> -->
+            </div>
+
+        </div><!-- panel-role-talent -->
+
+    </div> <!-- #UpdatePanel -->
+
+</div><!-- layout -->
+
+<div id="footer">
+
+    <div id="footer-nav">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p id="copyright">&copy;<script>document.write(new Date().getFullYear())</script> Copyright Shabang, Inc.</p>
+    </div><!-- footer-nav -->
+
+</div><!-- footer -->
+
+</body>
+</html>

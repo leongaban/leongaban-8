@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Welcome to Shabang </title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="" />
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link href="css/shabang.css" type="text/css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
+    <![endif]-->
+    <script type='text/javascript' src='js/jquery-2.0.0.min.js'></script>
+    <script type='text/javascript' src='http://select-box.googlecode.com/svn/tags/0.2/jquery.selectbox-0.2.min.js'></script>
+    <!-- Close button code modified:-->
+    <script type='text/javascript' src='js/jquery.simplemodal-1.4.4_shabang.js'></script>
+    <script type='text/javascript' src='js/registration.js'></script>
+</head>
+
+<body>
+
+<div class="layout">
+
+    <div class="header">
+
+        <div class="head-wrapper">
+
+            <div class="navigation">
+
+                <div class="logo">
+                    <img src="img/logo.png" class="user-action" data-btn="home" data-pane="home" title="Shabang" alt="Shabang"/>
+                </div><!-- logo -->
+
+                <div class="head-search">
+                    <input class="txtinput" type="text"/>
+                    <a href="#"><img src="img/search_button.png" alt="search"/></a>
+                </div><!-- head-search -->
+
+                <div class="search_view_selection">
+                    <div class="search-view-text">View:</div> <select id="search-dropdown" sb="83369732" style="display: block;">
+                        <option value="1" selected="selected">Everything</option>
+                        <option value="2" selected="selected">Something</option>
+                        <option value="3" selected="selected">Nothing</option>
+                    </select>
+                </div><!-- search_view_selection -->
+
+                <div id="user-actions">
+                    <ul>
+                        <li class="btn-blue user-action" data-btn="login" data-pane="roles">Log In</li>
+                        <li class="btn-purple user-action" data-btn="signup" data-pane="roles">Sign Up</li>
+                    </ul>
+                </div><!-- user-actions -->
+
+                <div id="search-745-div">
+                    <div id="search-field-745">
+                        <input class="search745" type="text">
+                    </div>
+                    <div id="search-btn-745" class="user-action" data-btn="search">
+                        <img src="img/search_button_big.png" alt="search"/>
+                    </div>
+                </div>
+
+            </div><!-- navigation -->
+
+            <div class="options">
+                <div class="logo-mobile">
+                    <img src="img/logo.png" class="user-action" data-btn="home" data-pane="home" title="Shabang" alt="Shabang"/>
+                </div><!-- logo -->
+
+                <div class="mobile-640-nav">
+                    <div id="search-btn-640" class="user-action" data-btn="search-mobile">
+                        <img src="img/search-btn-mobile.png" alt="search"/>
+                    </div>
+
+                    <div class="btn-blue user-action mobile-user-options" data-btn="mobile-user-options" data-pane="home">
+                        <img src="img/mobile-profile-head-icon.png" title="Options" alt="Options"/>
+                    </div>
+                </div><!-- mobile-640-nav -->
+            </div><!-- options -->
+
+            <div class="options-menu">
+                <ul>
+                    <li class="btn-blue">My Profile</li>
+                    <li class="btn-blue">Privacy</li>
+                    <li class="btn-blue">Logout</li>
+                </ul>
+            </div>
+
+            <div class="options-search">
+                <div class="options-search-dropdown-mobile">
+                    <div class="search-view-text" style="float:left; color:#333;">View: </div> <select id="search-dropdown" sb="83369732" style="display: block;">
+                        <option value="1" selected="selected">Everything</option>
+                        <option value="2" selected="selected">Something</option>
+                        <option value="3" selected="selected">Nothing</option>
+                    </select>
+                </div>
+
+                <div class="options-search-bar">
+                    <div class="options-search-bar-left">
+                        <input class="mobile-search-input" type="text"/>
+                    </div>
+
+                    <div class="options-search-bar-right">
+                        <img src="img/search-btn-mobile.png" alt="search"/>
+                    </div>
+                </div>
+            </div><!-- options-search -->
+
+        </div><!-- head-wrapper -->
+
+    <div class="header-bot-border"></div>
+    </div><!-- header -->
+
+    <div id="UpdatePanel">
+
+        <div id="panel-role-talent" class="registration-page" style="display:block;">
+
+            <div class="page-header">
+                <div class="page-description">
+                    <h1>Personalize</h1>
+                    <p>Let us know more about you, so that we can deliver content and opportunities that best suits you</p>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <div class="page">1</div>
+                <div class="selected page">2</div>
+                <div class="page">3</div>
+            </div>
+
+            <div class="roles-wrapper">
+
+                <!--
+                 _____                 __ 
+                |  __ \               /_ |
+                | |__) |_____      __  | |
+                |  _  // _ \ \ /\ / /  | |
+                | | \ \ (_) \ V  V /   | |
+                |_|  \_\___/ \_/\_/    |_|
+                -->
+                <!-- 1st Row | Roles Selection -->
+                <div class="roles-selection-row">
+
+                    <div class="roles-left-col">
+                        <span class="span-career-focus">
+                        Career Focus:
+                        <p><a class="moreLink" href="#" target="_blank" title="Learn more"><img src="img/registration_info_icon.png"> Learn more</a></p>
+                        </span>
+                    </div>
+
+                    <div class="roles-right-col">
+                        <p>Please choose one or more:</p>
+
+                        <div id="talent-roles">
+                            <ul>
+                                <li class="roleBtn" id="role-1" data-type="role" data-blue="blue-btn-1" data-row="row-role-1" data-modal="modal-1" data-num="1">
+                                    <div class="role-name">Actor</div>
+                                </li>
+
+                                <li class="roleBtn" id="role-2" data-type="role" data-blue="blue-btn-2" data-row="row-role-2" data-modal="modal-2" data-num="2">
+                                    <div class="role-name">Band</div>
+                                </li>
+
+                                <li class="roleBtn" id="role-3" data-type="role" data-blue="blue-btn-3" data-row="row-role-3" data-modal="modal-3" data-num="3">
+                                    <div class="role-name">Comedian</div>
+                                </li>
+
+                                <li class="roleBtn" id="role-4" data-type="role" data-blue="blue-btn-4" data-row="row-role-4" data-modal="modal-4" data-num="4">
+                                    <div class="role-name">DJ</div>
+                                </li>
+
+                                <li class="roleBtn" id="role-5" data-type="role" data-blue="blue-btn-5" data-row="row-role-5" data-modal="modal-5" data-num="5">
+                                    <div class="role-name">Host</div>
+                                </li>
+
+                                <li class="roleBtn" id="role-6" data-type="role" data-blue="blue-btn-6" data-row="row-role-6" data-modal="modal-6" data-num="6">
+                                    <div class="role-name">Musician/Singer</div>
+                                </li>
+
+                                <li class="roleBtn" id="role-7" data-type="role" data-blue="blue-btn-7" data-row="row-role-7" data-modal="modal-7" data-num="7">
+                                    <div class="role-name">Reality Contestant</div>
+                                </li>
+
+                                <li class="roleBtn" id="role-8" data-type="role" data-blue="blue-btn-8" data-row="row-role-8" data-modal="modal-8" data-num="8">
+                                    <div class="role-name">Songwriter</div>
+                                </li>
+
+                                <li class="roleBtn" id="role-9" data-type="role" data-blue="blue-btn-9" data-row="row-role-9" data-modal="modal-9" data-num="9">
+                                    <div class="role-name">Voiceover Talent</div>
+                                </li>
+                            </ul>
+                        </div><!-- talent-gender -->
+
+                        <div class="dash-spacer"></div>
+
+                    </div><!-- roles-right-col -->
+
+                </div><!-- roles-selection-row -->
+
+            <div class="roles-selection-row">
+
+                <!-- Left of Role Choices -->
+                <div class="roles-left-col"></div>
+
+                <!-- Role Choices-->
+                <div class="roles-right-col">
+
+                    <!-- SELECTED ROLES DIV -->
+                    <div class="selected_row">
+                        <section class="right_col_roles">
+
+                            <div class="your-choices">Your Choices</div>
+
+                                <!-- Create Blue Buttons on fly here -->
+                                <div class="choices-col-left">
+                                    <div class="blueBtn-holder" style="height: 46px;">
+                                        <div class="blueBtn">
+                                            <div class="role-name">Actor</div>
+                                        </div>
+                                    </div>
+                                    <div class="blueBtn-holder" style="height: 46px;">
+                                        <div class="blueBtn">
+                                            <div class="role-name">Band</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Create Genre tags on fly here -->
+                                <div class="choices-col-right">
+                                    <div class="tags-holder" id="tagsHolder-1">
+                                        <span>Genres:</span><p>Adult Animated, Behind the Scenes, Documentary</p>
+                                    </div>
+                                    <div class="tags-holder" id="tagsHolder-2">
+                                        <span>Genres:</span><p>Blues, Classical, Dance Electronic</p>
+                                    </div>
+                                </div>
+
+                            <div class="dash-spacer-new-1"></div>
+                            <div class="clear"></div>
+                        </section>
+                    </div><!-- selected_row -->
+
+                </div><!-- roles-right-col -->
+
+            </div>
+
+                <!--
+                    
+                 _____                 ___  
+                |  __ \               |__ \ 
+                | |__) |_____      __    ) |
+                |  _  // _ \ \ /\ / /   / / 
+                | | \ \ (_) \ V  V /   / /_ 
+                |_|  \_\___/ \_/\_/   |____|
+                            
+                -->
+                <!-- 2nd Row | Fan Selection -->
+                <div class="roles-selection-row">
+
+                    <div class="roles-left-col">
+                        <span class="span-fan-of">
+                        Fan Of:
+                        <p><a class="moreLink" href="#" target="_blank" title="Learn more"><img src="img/registration_info_icon.png"> Learn more</a></p>
+                        </span>
+                    </div>
+
+                    <div class="roles-right-col">
+
+                        <p>Please choose one or more:</p>
+
+                        <div id="fan-btn-containers">
+                            <ul>
+                                <li class="roleBtn" data-type="fan" id="fan-1" data-blue="blue-btn-fan-1" data-row="fan-row-role-1" data-num="1" data-modal="modal-fan-1">
+                                    <div class="role-name">Comedy</div>
+                                </li>
+
+                                <li class="roleBtn" data-type="fan" id="fan-2" data-blue="blue-btn-fan-2" data-row="fan-row-role-2" data-num="2" data-modal="modal-fan-2">
+                                    <div class="role-name">Music</div>
+                                </li>
+
+                                <li class="roleBtn" data-type="fan" id="fan-3" data-blue="blue-btn-fan-3" data-row="fan-row-role-3" data-num="3" data-modal="modal-fan-3">
+                                    <div class="role-name">TV</div>
+                                </li>
+                            </ul>
+                        </div><!-- fan-btn-containers -->
+
+                        <div class="dash-spacer"></div>
+                    
+                    </div><!-- roles-right-col -->
+
+                </div><!-- roles-selection-row -->
+
+                <div class="roles-selection-row">
+
+                    <!-- Left of Role Choices -->
+                    <div class="roles-left-col"></div>
+
+                    <!-- Fan of Choices-->
+                    <div class="roles-right-col">
+
+                        <!-- SELECTED ROLES DIV -->
+                    <div class="selected_row">
+                        <section class="right_col_roles">
+                            <div class="your-choices" style="">Your Choices</div>
+                                <div class="choices-col-left">
+                                    <div class="blueBtn-holder">
+
+                                        <div class="blueBtn">
+                                            <div class="role-name">Comedy</div>
+                                        </div>
+
+                                    </div>
+                                    <div class="blueBtn-holder">
+
+                                        <div class="blueBtn">
+                                            <div class="role-name">Music</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="choices-col-right">
+                                    <div class="tags-holder">
+                                        <span>Genres:</span>
+                                        <p>Character, Latino, PG</p>
+                                    </div>
+                                    <div class="tags-holder">
+                                        <span>Genres:</span>
+                                        <p>Blues, Classical, Dance Electronic</p>
+                                    </div>
+                                </div>
+                            <div class="dash-spacer-new-2"></div><div class="clear"></div></section>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--
+                 _____                 ____  
+                |  __ \               |___ \ 
+                | |__) |_____      __   __) |
+                |  _  // _ \ \ /\ / /  |__ < 
+                | | \ \ (_) \ V  V /   ___) |
+                |_|  \_\___/ \_/\_/   |____/ 
+                -->
+                <!-- 3rd Row | Terms of Service -->
+                <div class="roles-selection-row">
+
+                    <div class="roles-left-col">
+                        <span class="span-terms-of-service">
+                        Terms of Service:
+                        </span>
+                    </div>
+
+                    <div class="roles-right-col">
+
+                        <div id="i-agree-terms">
+                            <input id="tAgree" type="checkbox" name="terms" value="terms" tabindex="12"> I agree to <span id="termsLink" title="View Terms">Terms of Service</span>
+                        </div>
+
+                        <div class="dash-spacer"></div>
+
+                    </div><!-- roles-right-col -->
+
+                </div><!-- roles-selection-row -->
+
+
+                <!--
+                
+                 _____                 _  _   
+                |  __ \               | || |  
+                | |__) |_____      __ | || |_ 
+                |  _  // _ \ \ /\ / / |__   _|
+                | | \ \ (_) \ V  V /     | |  
+                |_|  \_\___/ \_/\_/      |_|  
+                -->
+                <!-- 4th Row | Captcha -->
+                <div class="roles-selection-row">
+
+                    <div class="roles-left-col">
+                        <span class="span-captcha">
+                        Captcha:
+                        </span>
+                    </div>
+
+                    <div class="roles-right-col">
+
+                        <div id="captcha">
+                            <div id="recaptcha_widget" style="display:block">
+                          
+                                <div class="recaptcha_images">
+                                    <div><a href="javascript:Recaptcha.reload()"><img src="img/recaptcha_reload.png" alt="Get another CAPTCHA" /></a></div>
+                                    <div class="recaptcha_only_if_image"><a href="javascript:Recaptcha.switch_type('audio')"><img src="img/recaptcha_audio.png" alt="Get an audio CAPTCHA" /></a></div>
+                                    <div class="recaptcha_only_if_audio"><a href="javascript:Recaptcha.switch_type('image')"><img src="img/recaptcha_image.png" alt="Get an image CAPTCHA" /></a></div>
+                                    <div><a href="javascript:Recaptcha.showhelp()"><img src="img/recaptcha_help.png" alt="Help" /></a></div>
+                                    <div class="recaptcha_logo"><img src="img/recaptcha_logo.png" alt="reCAPTCHA" /></div>
+                                </div>
+                                <div id="recaptcha_image"></div>
+
+                                <!-- <div class="recaptcha_only_if_incorrect_sol" style="color:red">Incorrect please try again</div> -->
+
+                                <!-- captcha-answer -->
+                                <div id="captcha-answer">
+                                    <div class="captcha-field-top">
+                                        <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" />     
+                                    </div>
+                                    <!-- <div class="captcha-field-bot">
+                                        <div class="validCaptcha">
+                                            <img src="img/registration_validation_check.png"/>
+                                            Match!
+                                        </div>
+                                        <div class="invalidCaptcha"><img src="img/registration_validation_invalid.png" />Words do not match.</div>
+                                    </div> -->
+                                </div>
+                                <!-- END captcha-answer -->
+
+                            </div>
+
+                            <script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k=6LerwNwSAAAAAEu_ee-c3dxPKr90_e29D2BLSjQN"></script>
+                            <noscript>
+                                <iframe src="http://www.google.com/recaptcha/api/noscript?k=6LerwNwSAAAAAEu_ee-c3dxPKr90_e29D2BLSjQN"
+                                    height="300" width="535" frameborder="0"></iframe><br />
+                                <textarea name="recaptcha_challenge_field" rows="3" cols="40">
+                                </textarea>
+                                <input type="hidden" name="recaptcha_response_field"
+                                    value="manual_challenge">
+                            </noscript>
+                        </div>
+
+                        <div class="dash-spacer"></div>
+
+                    </div><!-- roles-right-col -->
+
+                </div><!-- roles-selection-row -->
+
+            </div><!-- roles-wrapper -->
+
+
+            <div class="modal simplemodal-data" style="display:none;" id="modal-1">
+
+                <div class="modal-top">
+                    <div class="modal-title">
+                        <label>Actor</label>: Select one or more genres below
+                    </div>
+
+                    <div class="modal-closer">
+                        <a class="simplemodal-close" title="Close">
+                            <img src="img/x.png" alt="Close">
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="category">
+                    <div class="tv-choices">
+
+                        <!-- <div class="choices-title">TV</div> -->
+                        <div class="choices-checkboxes">
+
+                            <div class="category_box">
+                                <input type="checkbox" id="all" name="all" value="none">
+                                <label for="all">All</label>
+                            </div>
+
+                            <div class="category_box">
+                                <input type="checkbox" id="aa" name="aa" value="none">
+                                <label for="aa">Adult Animated</label>
+                            </div>
+
+                            <div class="category_box">
+                                <input type="checkbox" id="anime" name="anime" value="none">
+                                <label for="anime">Anime</label>
+                            </div>
+
+                            <div class="category_box">
+                                <input type="checkbox" id="awardshows" name="awardshows" value="none">
+                                <label for="awardshows">Award Shows</label>
+                            </div>
+
+                            <div class="category_box">
+                                <input type="checkbox" id="behindthescenes" name="behindthescenes" value="none">
+                                <label for="behindthescenes">Behind the Scenes</label>
+                            </div>
+
+                            <div class="category_box">
+                                <input type="checkbox" id="christianprogramming" name="christianprogramming" value="none">
+                                <label for="christianprogramming">Christian Programming</label>
+                            </div>
+
+                            <div class="category_box">
+                                <input type="checkbox" id="comedy" name="comedy" value="none">
+                                <label for="comedy">Comedy</label>
+                            </div>
+
+                            <div class="category_box">
+                                <input type="checkbox" id="documentary" name="documentary" value="none">
+                                <label for="documentary">Documentary</label>
+                            </div>
+
+                            <div class="category_box">
+                                <input type="checkbox" id="drama" name="drama" value="none">
+                                <label for="drama">Drama</label>
+                            </div>
+
+                            <div class="category_box">
+                                <input type="checkbox" id="gameshow" name="gameshow" value="none">
+                                <label for="gameshow">Game Show</label>
+                            </div>
+
+                            <div class="category_box">
+                                <input type="checkbox" id="kidsfamily" name="kidsfamily" value="none">
+                                <label for="kidsfamily">Kids &amp; Family</label>
+                            </div>
+
+                            <div class="category_box">
+                                <input type="checkbox" id="music" name="music" value="none">
+                                <label for="music">Music</label>
+                            </div>
+
+                            <div class="category_box">
+                                <input type="checkbox" id="news" name="news" value="none">
+                                <label for="news">News</label>
+                            </div>
+
+                            <div class="category_box">
+                                <input type="checkbox" id="reality" name="reality" value="none">
+                                <label for="reality">Reality</label>
+                            </div>
+
+                            <div class="category_box">
+                                <input type="checkbox" id="sports" name="sports" value="none">
+                                <label for="sports">Sports</label>
+                            </div>
+
+                            <div class="category_box">
+                                <input type="checkbox" id="talkshow" name="talkshow" value="none">
+                                <label for="talkshow">Talk Show</label>
+                            </div>
+
+                            <div class="category_box">
+                                <input type="checkbox" id="variety" name="variety" value="none">
+                                <label for="variety">Variety</label>
+                            </div>
+
+                            <div class="clearfix"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="modal-dashes"></div>
+
+                    <div class="modal-buttons">
+                        <ul>
+                            <a class="simplemodal-close"><li class="btn-purple">Cancel</li></a>
+                            <li id="closeButton" class="btn-purple simplemodal-close doneButton">Done</li>
+                        </ul>
+                    </div>
+
+                </div><!-- category -->
+
+            </div><!-- modal -->
+
+            <!-- MOBILE MODAL WINDOW -->
+            <div class="modal-mobile simplemodal-data" style="display:none;" id="modal-mobile-1">
+
+                <div class="modal-top">
+                    <div class="modal-title">
+                        <label>Actor</label>: Select one or more genres below
+                    </div>
+
+                    <div class="modal-closer">
+                        <a class="simplemodal-close" title="Close"><img src="img/x.png" alt="Close"></a>
+                    </div>
+
+                </div>
+
+                <div class="category">
+                    <div class="tv-choices">
+                        <!-- <div class="choices-title">TV</div> -->
+                        <div class="choices-checkboxes">
+                            <ul>
+                                <li class="btn-blue">All</li>
+                                <li class="btn-blue">Adult Animated</li>
+                                <li class="btn-blue">Anime</li>
+                                <li class="btn-blue">Award Shows</li>
+                                <li class="btn-blue">Behind the Scenes</li>
+                                <li class="btn-blue">Christian Programming</li>
+                                <li class="btn-blue">Comedy</li>
+                                <li class="btn-blue">Documentary</li>
+                                <li class="btn-blue">Drama</li>
+                                <li class="btn-blue">Game Show</li>
+                                <li class="btn-blue">Kids &amp; Family</li>
+                                <li class="btn-blue">Music</li>
+                                <li class="btn-blue">News</li>
+                                <li class="btn-blue">Reality</li>
+                                <li class="btn-blue">Sports</li>
+                                <li class="btn-blue">Talk Show</li>
+                                <li class="btn-blue">Variety</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="modal-dashes"></div>
+
+                    <div class="modal-buttons">
+                        <ul>
+                            <a class="simplemodal-close"><li class="btn-purple">Cancel</li></a>
+                            <li id="closeButton" class="btn-purple simplemodal-close doneButton">Done</li>
+                        </ul>
+                    </div>
+
+                </div><!-- category -->
+
+            </div><!-- modalMobile -->
+
+            </div><!-- panel-role-talent -->
+
+            <div class="registration-navigation">
+                <div class="back-button"><a href="index.html">« back</a></div>
+                <div class="next-button btn-purple user-action" data-btn="photo_upload" data-pane="photo_upload" id="secondNextButton">Next</div>
+                <!-- After Validation Add class btn-purple-->
+                <!-- <div class="next-button btn-purple">Next</div> -->
+            </div>
+
+        </div><!-- panel-role-talent -->
+
+    </div> <!-- #UpdatePanel -->
+
+</div><!-- layout -->
+
+<div id="footer">
+
+    <div id="footer-nav">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p id="copyright">&copy;<script>document.write(new Date().getFullYear())</script> Copyright Shabang, Inc.</p>
+    </div><!-- footer-nav -->
+
+</div><!-- footer -->
+
+</body>
+</html>

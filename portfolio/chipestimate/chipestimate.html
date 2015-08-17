@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadence | Chip Estimate</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+	<!-- html5.js for IE less than 9 -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,700italic' rel='stylesheet' type='text/css'>
+    <link href="css/normalize.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" type="text/css" rel="stylesheet">
+    <link href="css/screen.css" type="text/css" rel="stylesheet">
+    <!--[if lt IE 10]>
+    	<link href="css/ie9.css" type="text/css" rel="stylesheet">
+    <![endif]-->
+    <!--[if lt IE 9]>
+    	<link href="css/ie8.css" type="text/css" rel="stylesheet">
+    <![endif]-->
+    <!--[if lt IE 8]>
+    	<link href="css/ie7.css" type="text/css" rel="stylesheet">
+    <![endif]-->
+
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/defaktogroup.js" type="text/javascript"></script>
+
+    <!-- include jQuery + carouFredSel plugin -->
+	<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+
+	<!-- optionally include helper plugins -->
+	<script type="text/javascript" src="js/helper-plugins/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="js/helper-plugins/jquery.touchSwipe.min.js"></script>
+	<script type="text/javascript" src="js/helper-plugins/jquery.transit.min.js"></script>
+	<script type="text/javascript" src="js/helper-plugins/jquery.ba-throttle-debounce.min.js"></script>
+    <script src="js/respond.src.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+	
+	<div class="container homepage" >
+
+		<div class="header">
+
+			<div class="header-top">
+
+				<div id="logo">
+
+					<div class="logo-link">
+						<a href="#" class="logo" title="ChipEstimate.com"><img src="img/logo_chip_estimate.png" alt="ChipEstimate.com"/></a>
+					</div>
+
+					<!-- Mobile Menu -->
+					<div class="logo-mobile-nav" style="display:none;">
+						<a href="#" id="mobile-menu-btn" title="Menu"><img src="img/icon_mobile_nav_menu.png" alt="Menu" /></a>
+					</div>
+	
+					<!-- Close Mobile Menu -->
+					<div class="close-mobile-menu">
+						<a href="#" id="close-menu-btn"><img src="img/close_mobile_menu.png" alt="Close" /></a>
+					</div>
+
+					<div class="mobile-menu">
+						<div class="accordion" id="accordion2">
+
+						  <div class="accordion-group">
+						    <div class="accordion-heading">
+						    	
+						      	<a class="accordion-toggle bolded" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">
+							    	Vendors &amp; Foundires
+							    	<!-- <img src="img/header-blue-down-arrow.png" alt="blue triangle"/> -->
+						    	</a>
+
+						    </div>
+
+						    <div id="collapseOne" class="accordion-body collapse">
+						      <div class="accordion-inner"><a href="#">Vendor 1</a></div>
+						      <div class="accordion-inner"><a href="#">Vendor 2</a></div>
+						      <div class="accordion-inner"><a href="#">Vendor 3</a></div>
+						    </div>
+						  </div>
+
+						  <div class="accordion-group">
+						    <div class="accordion-heading">
+						    	<a class="accordion-toggle bolded" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+									<div class="mob-nav-btn">
+							    		Library
+							    	</div>
+							    	<!-- <img src="img/header-blue-down-arrow.png" alt="blue triangle"/> --> <!-- <span class="grey_triangle"> -->
+						    		
+						    	</a>
+						    </div>
+
+						    <div id="collapseTwo" class="accordion-body collapse">
+						      <div class="accordion-inner"><a href="#">Blogs</a></div>
+						      <div class="accordion-inner"><a href="#">Tech Talks</a></div>
+						      <div class="accordion-inner"><a href="#">White Papers</a></div>
+						      <div class="accordion-inner"><a href="#">ChipEstimate.tv</a></div>
+						      <div class="accordion-inner"><a href="#">IP Connections Newsletter</a></div>
+						      <div class="accordion-inner"><a href="#">Webcasts</a></div>
+						    </div>
+						  </div>
+
+						  <div class="accordion-group">
+						    <div class="accordion-heading">
+						     	<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree">
+						     		<div class="mob-nav-btn">
+							    		English
+							    	</div>
+						      		<!-- <img src="img/header-small-down-arrow.png" alt="grey triangle"/> -->
+						      	</a> 
+						    </div>
+
+						    <div id="collapseThree" class="accordion-body collapse">
+						      <div class="accordion-inner"><a href="#">English</a></div>
+						      <div class="accordion-inner"><a href="#">Spanish</a></div>
+						      <div class="accordion-inner"><a href="#">German</a></div>
+						      <div class="accordion-inner"><a href="#">Japanese</a></div>
+						      <div class="accordion-inner"><a href="#">Chinese</a></div>
+						    </div>
+						  </div>
+
+						  <div class="accordion-group">
+						    <div class="accordion-heading">
+						     	<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseFour">
+						     		<div class="mob-nav-btn">
+							    		Logout
+							    	</div>
+						     		<!-- <img src="img/header-small-down-arrow.png" alt="grey triangle"/> -->
+						     	</a>
+						    </div>
+
+						    <div id="collapseFour" class="accordion-body collapse">
+						      <div class="accordion-inner"><a href="#">Logout</a></div>
+						      <div class="accordion-inner"><a href="#">Account</a></div>
+						    </div>
+						  </div>
+
+						</div><!-- accordion -->
+					</div><!-- mobile-menu -->
+
+				</div><!-- logo -->
+
+				<div class="header-nav">
+
+					<ul id="nav-account" role="navigation" class="pull-right">
+
+						<!-- Language Dropdown Button -->
+						<li id="language-btn">
+							<a href="#" id="drop1" class="dropdown-toggle" data-toggle="dropdown">English</a>
+							<img src="img/header-small-down-arrow.png" alt="grey triangle"/><!-- <span class="grey_triangle"></span>-->
+
+							<!-- Language Dropdown Menu-->
+							<ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+				                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">English</a></li>
+				                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Spanish</a></li>
+				                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">German</a></li>
+				                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Japanese</a></li>
+				                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Chinese</a></li>
+			              	</ul>
+						</li>
+
+						<!-- User Dropdown Button -->
+						<li id="account-btn">
+							<a href="#" id="drop2" class="dropdown-toggle" data-toggle="dropdown">Logout</a>
+							<img src="img/header-small-down-arrow.png" alt="grey triangle"/>
+							<!-- <span class="grey_triangle"></span> -->
+
+							<!-- User Dropdown Menu-->
+							<ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+				                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://google.com">Logout</a></li>
+				                <li role="presentation"><a role="menuitem" tabindex="-1" href="#anotherAction">Account</a></li>
+			              	</ul>
+						</li>
+					</ul>
+
+					<!-- ...................................................................................... -->
+
+					<ul id="nav-library" role="navigation" class="pull-right">
+
+						<!-- Library Dropdown Button -->
+						<li id="library-btn">
+							<a href="#" id="drop-library" class="dropdown-toggle" data-toggle="dropdown">Library</a><img src="img/header-blue-down-arrow.png" alt="blue triangle"/><!-- <span class="blue_triangle"></span>-->
+
+							<!-- Library Dropdown Menu-->
+							<ul class="dropdown-menu" role="menu" aria-labelledby="drop-library">
+				                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Blogs</a></li>
+				                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Tech Talks</a></li>
+				                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">White Papers</a></li>
+				                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">ChipEstimate.TV</a></li>
+				                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">IP Connections Newletter</a></li>
+				                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Webcasts</a></li>
+			              	</ul>
+						</li>
+
+						<!-- Vendor Dropdown Button -->
+						<li id="vendor-btn">
+							<a href="#" id="drop-vendors" class="dropdown-toggle" data-toggle="dropdown">Vendors &amp; Foundires</a><img src="img/header-blue-down-arrow.png" alt="blue triangle"/><!-- <span class="blue_triangle"></span>-->
+							
+							<!-- Vendor Dropdown Menu-->
+							<ul class="dropdown-menu" role="menu" aria-labelledby="drop-vendors">
+				                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Vendor 1</a></li>
+				                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Vendor 2</a></li>
+				                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Vendor 3</a></li>
+				                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Vendor 4</a></li>
+				                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Vendor 5</a></li>
+				                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Vendor 6</a></li>
+			              	</ul>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+			<div class="header-bot">
+
+				<div id="search">
+
+					<form>
+						<input class="span6" type="text" value="Search by keyword" name="search" onblur="if (this.value == '') {this.value = 'Search by keyword';}" onfocus="if (this.value == 'Search by keyword') {this.value = '';}" />
+
+						<img id="search-btn" src="img/btn-header-search.png" title="Search" alt="Search" />
+					</form>
+
+				</div><!-- search -->
+
+				<div id="advanced-dropdowns">
+					<ul>
+						<li class="dropdown">
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<!-- Advanced Button -->
+								<div id="drop-btn-advanced">Advanced</div>
+							</a>
+
+								<div id="advanced_dropdown" class="dropdown-menu" role="menu" aria-labelledby="drop-advanced">
+								<div class="dropdown-toggle close" data-toggle="dropdown">Close X</div>
+								<p>Filter Your keyword search by content, vendor and/or date:</p>
+								
+									<form id="advanced_search">
+										<input type="checkbox" id="IP" name="IP" value="IP" onclick="javascript:checkboxChange()"/>
+										<label for="IP">IP</label>
+										<input type="checkbox" id="blogs" name="blogs" value="Blogs" />
+										<label for="blogs">Blogs</label>
+										<input type="checkbox" id="ip_news" name="ip_news" value="IP Newsletter" />
+										<label for="ip_news">IP Connections Newsletter</label>
+										<input type="checkbox" id="webcasts" name="webcasts" value="Webcasts" />
+										<label for="webcasts">Webcasts</label>
+										<div class="clear"></div>
+										<input type="checkbox" id="white_papers" name="white_papers" value="White Papers" />
+										<label for="white_papers">White Papers</label>
+										<input type="checkbox" id="tech_talk" name="tech_talk" value="Tech Talk" />
+										<label for="tech_talk">Tech Talk</label>
+										<input type="checkbox" id="chip_tv" name="chip_tv" value="Chip Estimate.TV" />
+										<label for="chip_tv">Chip Estimate.TV</label>
+										<select>
+											<option select="selected" value="vendors">Vendors</option>
+										</select>
+										<div class="clear"></div>
+										<div id="ip_advanced">
+											<div class="dashed-divider"></div>
+											<div class="clear"></div>
+											<p>For IP search, filter by the criteria below:</p>	
+											<div class="ip_option node">
+												<div class="ip_option_name">
+													Node
+												</div>
+												<div class="ip_check_boxes">
+													<input type="checkbox" id="twenty_eight" name="twenty_eight" value="28nm" />
+													<label for="twenty_eight">28nm</label>
+													<input type="checkbox" id="thirty_two" name="thirty_two" value="32nm" />
+													<label for="thirty_two">32nm</label>
+													<input type="checkbox" id="forty" name="forty" value="40nm" />
+													<label for="forty">40nm</label>
+													<input type="checkbox" id="forty_five" name="forty_five" value="45nm" />
+													<label for="forty_five">45nm</label>
+													<input type="checkbox" id="fifty_five" name="fifty_five" value="55nm" />
+													<label for="fifty_five">55nm</label>
+													<input type="checkbox" id="sixty_five" name="sixty_five" value="65nm" />
+													<label for="sixty_five">65nm</label>
+													<input type="checkbox" id="ninety" name="ninety" value="90nm" />
+													<label for="ninety">90nm</label>
+													<input type="checkbox" id="one_thirty" name="one_thirty" value="130nm" />
+													<label for="one_thirty">130nm</label>
+													<input type="checkbox" id="one_fifty" name="one_fifty" value="150nm" />
+													<label for="one_fifty">150nm</label>
+													<input type="checkbox" id="one_eighty" name="one_eighty" value="180nm" />
+													<label for="one_eighty">180nm</label>
+													<input type="checkbox" id="two_fifty" name="two_fifty" value="250nm" />
+													<label for="two_fifty">250nm</label>
+													<input type="checkbox" id="three_fifty" name="three_fifty" value="350nm" />
+													<label for="three_fifty">350nm</label>
+												</div>
+											</div>
+											<div class="clear"></div>
+											<div class="ip_option foundry">
+												<div class="ip_option_name">
+													Foundry
+												</div>
+												<div class="ip_check_boxes">
+													<input type="checkbox" id="common_platform" name="common_platform" value="Common Platform" />
+													<label for="common_platform">Common Platform</label>
+													<input type="checkbox" id="silterra" name="silterra" value="SilTerra" />
+													<label for="silterra">SilTerra</label>
+													<input type="checkbox" id="tower" name="tower" value="Tower" />
+													<label for="tower">Tower</label>
+													
+													<input type="checkbox" id="global_foundries" name="global_foundries" value="Global Foundries" />
+													<label for="global_foundries">Global Foundries</label>
+													<input type="checkbox" id="smic" name="smic" value="SMIC" />
+													<label for="smic">SMIC</label>
+													<input type="checkbox" id="umc" name="umc" value="UMC" />
+													<label for="umc">UMC</label>
+													
+													<input type="checkbox" id="ibm" name="ibm" value="IBM" />
+													<label for="ibm">IBM</label>
+													<input type="checkbox" id="tsmc" name="tsmc" value="TSMC" />
+													<label for="tsmc">TSMC</label>
+													<input type="checkbox" id="x-fab" name="x-fab" value="X-FAB" />
+													<label for="x-fab">X-FAB</label>
+												</div>
+											</div>
+											<div class="clear"></div>
+											<div class="ip_option category">
+												<div class="ip_option_name">
+													Category
+												</div>
+												<select>
+													<option selected disabled value="">Any</option>
+												</select>
+											</div>
+											<div class="clear"></div>
+											<div class="ip_option vendors">
+												<div class="ip_option_name">
+													Vendors
+												</div>
+												<select>
+													<option selected disabled value="">Any</option>
+												</select>
+											</div>
+											<div class="clear"></div>
+											<div class="ip_option portability">
+												<div class="ip_option_name">
+													Portability
+												</div>
+												<div class="ip_check_boxes">
+													<input type="checkbox" id="asic" name="asic" value="ASIC" />
+													<label for="asic">ASIC</label>
+													<input type="checkbox" id="fpga" name="fpga" value="FPGA" />
+													<label for="fpga">FPGA</label>
+													<input type="checkbox" id="structured" name="structured" value="Structured" />
+													<label for="structured">Structured</label>
+												</div>
+											</div>
+											<div class="clear"></div>
+											<div class="ip_option quality">
+												<div class="ip_option_name">
+												IP Quality
+												</div>
+												<div class="ip_check_boxes">
+													<input type="checkbox" id="qip" name="qip" value="QIP Rated" />
+													<label for="qip">QIP Rated</label>
+												</div>
+											</div>
+										</div>
+
+										<!-- Localize -->
+										<div id="submit">Search&raquo;</div>
+									</form>
+								</div>
+						</li>
+						<li class="dropdown">
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<!-- Concierege Button -->
+								<div id="drop-btn-concierege">Concierege</div>
+							</a>
+
+								<div id="concierge_dropdown" class="dropdown-menu" role="menu" aria-labelledby="drop-search">
+									<div class="close">Close X</div>
+									<div class="left-concierge">
+
+										<!-- Concierge Dropdown Header Image -->
+										<div id="drop-concierge-header">Concierege</div>
+
+											<span class="blue_number">1.</span><p>Describe the service you need (example: IP, design services, foundry, ASIC), then submit your request.</p>
+											<div class="dashed-divider"></div>
+											<span class="blue_number">2.</span><p>ChipEstimate.com's concierge service will contact leading suppliers on your behalf.</p>
+											<div class="dashed-divider"></div>
+											<span class="blue_number">3.</span><p>Suppliers with solutions matching your needs will follow up with you directly.</p>
+											<div class="dashed-divider"></div>
+									</div>
+									<div class="right-concierge">
+										<form>
+										<div class="float_left">
+											<label for="email">Email Address</label>
+											<input type="email" name="email" id="email" />
+											<label for="name">Your Name</label>
+											<input type="text" name="name" id="name" />
+											<label for="company">Company</label>
+											<input type="text" name="company" id="company" />
+										</div>
+										<div class="float_right">
+											<label for="needs">Please describe your semiconductor IP needs :</label>
+											<textarea name="needs" id="needs" rows="6" cols="50">
+											</textarea><br />
+
+											<!-- Localize -->
+											<div id="submit">Submit&raquo;</div>
+										</div>
+										</form>
+									</div>
+									<div class="clear"></div>
+								</div>
+						</li>
+					</ul>
+				</div><!-- advanced-dropdowns -->
+
+			</div><!-- header-bot -->
+		</div><!-- header -->
+
+		<!-- Homepage Main Banner Slider -->
+		<!-- 
+			On IE8 and below you won't see the Javascript animation, but content will still rotate
+		-->
+		<div class="home-slider">
+			<div id="myCarousel" class="carousel slide">
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+				<!-- Carousel items -->
+				<div class="carousel-inner">
+					<div class="active item"><img src="img/banner-slider-1.png" alt="Banner Image" /></div>
+					<div class="item"><img src="img/banner-slider-1.png" alt="Banner Image" /></div>
+					<div class="item"><img src="img/banner-slider-1.png" alt="Banner Image" /></div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="content" style="display:block;">
+			
+			<!-- Pillar 1 -->
+			<div class="pillar1">
+
+				<!-- Column Learn #1 -->
+				<div class="column col-learn">
+					<div class="col-header-learn">Learn</div>
+					<div class="col-learn-content">
+						<ul class="learn-ul-1">
+
+							<!-- 
+								Dynamic data goes inside li's, replace the text: 
+								Titles must be truncated to fit on 2 lines, description copy must be truncated to fit on 3 lines.
+							-->
+							<li class="title ="><a href="#">The Case for Developing Custom Analog</a></li>
+							<li >The contents of this document are owned or controlled by S3 Group and are protected under...</li>
+							<li class="download"><a href="#">DOWNLOAD</a></li>
+							<li class="dashed-divider"></li>
+						</ul>
+						<ul class="learn-ul-2">
+							<li class="title"><a href="#">Twelve Design Techniques for Successful Integration...</a></li>
+							<li >To deliver the demanding performance and faster operation of today's systems-from communication...</li>
+							<li class="download"><a href="#">DOWNLOAD</a></li>
+							<li class="dashed-divider"></li>
+						</ul>
+						<ul class="learn-ul-3">
+							<li class="title"><a href="#">Benchmarking Mobile Storage with the Arasan High...</a></li>
+							<li>NAND Flash is the nonvolatile memory used in virtually all mobile devices.  (smartphones, tablets...</li>
+							<li class="download"><a href="#">DOWNLOAD</a></li>
+							<li class="dashed-divider"></li>
+						</ul>
+						<div class="view-all"><a href="#">View All &rsaquo;</a></div>
+					</div><!-- col-learn-content -->
+				</div><!-- col-learn -->
+
+				<!-- Column Latest #4 -->
+				<div class="column col-latest">
+					<div class="col-header-latest">Latest IP</div>
+					<div class="col-latest-content">
+						<ul class="latest-ul-1">
+
+							<!-- 
+								Dynamic data inside li's: title should be truncated to fit on 1 line
+								description should be truncated to fit on 1 line
+							-->
+
+							<li class="title-small blue">
+								<a href="#">ITU-T G729A Voice Codec Hardware...</a>
+							</li>
+							<li>Noesis Technologies</li>
+						</ul>
+						<ul class="latest-ul-2">
+							<li class="title-small orange">
+								<a href="#">8051 CPU IP - Small VLSI footprint, High... </a>
+							</li>
+							<li>Digital Blocks</li>
+						</ul>
+						<ul class="latest-ul-3">
+							<li class="title-small blue">
+								<a href="#">LCD Controller - TFT LCD Panels (Avalon...</a>
+							</li>
+							<li>Digital Blocks </li>
+						</ul>
+						<ul class="latest-ul-4">
+							<li class="title-small orange">
+								<a href="#">NSIDE Secure (AuthenTec) SafeXcel-IP-38...</a>
+							</li>
+							<li>INSIDE Secure Corporation </li>
+						</ul>
+						<ul class="latest-ul-5">
+							<li class="title-small orange">
+								<a href="#">MIPI M-PHY Verification IP</a>
+							</li>
+							<li>Truechip Solution Pvt. Ltd. </li>
+						</ul>
+						<ul class="latest-ul-6">
+							<li class="title-small blue">
+								<a href="#">MIPI CSI-2 Verification IP ‘</a>
+							</li>
+							<li>Truechip Solution Pvt. Ltd.</li>
+						</ul>
+
+						<div class="view-all"><a href="#">View All &rsaquo;</a></div>
+					</div><!-- col-latest-content -->
+				</div><!-- col-latest -->
+
+			</div><!-- Pillar 1 -->
+
+			<!-- Pillar 2 -->
+			<div class="pillar2">
+
+				<!-- Column Read #2 -->
+				<div class="column col-read">
+					<div class="col-header-read">Read</div>
+					<div class="col-read-content">
+						<ul>
+
+							<!-- 
+								Dynamic data inside li's: title should be truncated to fit on 2 lines
+								description should be truncated to fit on 2 lines
+							-->
+
+							<li class="image"><a href="#"><img class="brightness" src="img/photo_conference_cdn_live.jpg" alt="CDN LIVE Conference"/></a></li>
+							<li class="title"><a href="#">Moore's Cycle, Fifth Horseman, Mixed Signals, and IP Stress</a></li>
+							<li class="meta"><a href="#">IP Insider Blog — By John Blyler  Posted 3.23.2013</a></li>
+							<li>What do all of these things have in common? They were key topics addressed by...</li>
+							<li class="dashed-divider"></li>
+						</ul>
+						<ul>
+							<li class="image"><a href="#"><img class="brightness" src="img/photo_conference_speakers.jpg" alt="Conference Speakers"/></a></li>
+							<li class="title"><a href="#">Q&amp;A Reveals Deep Semiconductor Trends</a></li>
+							<li class="meta"><a href="#">IP Insider Blog — By John Blyler  Posted 3.23.2013</a></li>
+							<li>Will Extreme Ultraviolet (EUV) lithography ever come to pass?...</li>
+							<li class="dashed-divider"></li>
+						</ul>
+						<div class="view-all"><a href="#">View All &rsaquo;</a></div>
+					</div><!-- col-read-content -->
+				</div><!-- col-read -->
+
+				<!-- Column Industry #5 -->
+				<div class="column col-industry">
+					<div class="col-header-industry">Industry</div>
+					<div class="col-industry-content">
+						<ul>
+
+							<!-- 
+								Dynamic data inside li's: titles should be truncated to fit on a max of 2 lines
+							-->
+
+							<li class="title-small industry-li-1"><a href="#">Synopsys Introduces Galaxy Custom Router</a></li>
+							<li class="dashed-divider"></li>
+							<li class="title-small industry-li-2"><a href="#">SoC design to be the keynote topic by Imagination CEO at SNUG</a></li>
+							<li class="dashed-divider"></li>
+							<li class="title-small industry-li-3"><a href="#">Daimler Streamlines Flagship Truck Development with Mentor's Capital Electrical...</a></li>
+							<li class="dashed-divider"></li>
+							<li class="title-small industry-li-4"><a href="#">Xilinx Stays a Generation Ahead in All Programmable SoCs for Smarter Wireless,...</a></li>
+							<li class="dashed-divider industry-dashed-4"></li>
+							<li class="title-small industry-li-5"><a href="#">ARM and Synopsys Collaborate to Deliver Optimized Reference Implementations for...</a></li>
+							<li class="dashed-divider industry-dashed-5"></li>
+							<li class="title-small industry-li-6"><a href="#">Arasan Chip Systems Announces New Channel Partner in India</a></li>
+							<li class="dashed-divider industry-dashed-6"></li>
+						</ul>
+						<div class="view-all"><a href="#">View All &rsaquo;</a></div>
+					</div><!-- col-industry-content -->
+				</div><!-- col-industry -->
+
+			</div><!-- Pillar 2 -->
+	
+			<!-- Pillar 3 -->
+			<div class="pillar3">
+
+				<!-- Column Watch #3 -->
+				<div class="column col-watch">
+					<div class="col-header-watch">Watch</div>
+					<div class="col-watch-content">
+
+						<div class="featured">
+							<ul>
+
+								<!-- 
+									Dynamic data inside li's: Title should be truncated to fit on 1 line
+									Description should fit on a max of 3 lines
+								-->
+
+								<li class="image"><img src="img/logo_estimate_tv.png" alt="ChipEstimate.tv" /></li>
+								<li class="featured-image">
+									<a href="#"><img class="brightness" src="img/youtube_chip_estimate_tv.jpg" alt="ChipEstimate.tv" /></a>
+								</li>
+								<li class="title-small"><a href="#">DAC 2011 Retrospective. ChipEstimate.TV</a></li>
+								<li class="description">DAC 2011 Retrospective. Over 45 partner presentations. Over 1,800 attendees to IP Talks presentations. 100's of tweets. Bringing you an...</li>
+							</ul>
+						</div>
+
+						<div class="thumbnails">
+							<ul>
+
+								<!-- 
+									Dynamic data inside li's: title should be truncated to fit on 2 lines
+									description should be truncated to fit on 3 lines
+								-->
+
+								<li>
+									<div class="thumb-container thumb1">
+										<div class="thumb"><a href="#"><img class="brightness" src="img/thumbnail_watch_column_1.jpg" alt="thumbnail 1"/></a></div>
+										<div class="thumb-details">
+											<ul>
+												<li class="title-small"><a href="#">Mayor Chuck Reed</a></li>
+												<li>10th Annual CEO Business Climate Summit, which brings together a select...</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="thumb-container thumb2">
+										<div class="thumb"><a href="#"><img class="brightness" src="img/thumbnail_watch_column_2.jpg" alt="thumbnail 1"/></a></div>
+										<div class="thumb-details">
+											<ul>
+												<li class="title-small"><a href="#">Larry Gerston</a></li>
+												<li>10th Annual CEO Business Climate Summit, which brings together a select...</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="thumb-container thumb3">
+										<div class="thumb"><a href="#"><img class="brightness" src="img/thumbnail_watch_column_3.jpg" alt="thumbnail 1"/></a></div>
+										<div class="thumb-details">
+											<ul>
+												<li class="title-small"><a href="#">Carl Guardino</a></li>
+												<li>10th Annual CEO Business Climate Summit, which brings together a select...</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="thumb-container thumb4">
+										<div class="thumb"><a href="#"><img class="brightness" src="img/thumbnail_watch_column_4.jpg" alt="thumbnail 1"/></a></div>
+										<div class="thumb-details">
+											<ul>
+												<li class="title-small"><a href="#">DesignCon 2013 Retrospective</a></li>
+												<li>DesignCon is the premier annual industry event and the largest gathering of...</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="thumb-container thumb5">
+										<div class="thumb"><a href="#"><img class="brightness" src="img/thumbnail_watch_column_5.jpg" alt="thumbnail 1"/></a></div>
+										<div class="thumb-details">
+											<ul>
+												<li class="title-small"><a href="#">DesignCon 2013</a></li>
+												<li>DesignCon 2013, January 28th - 31st Santa Clara Convention ...</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div><!-- thumbnails -->
+
+						<div class="clear"></div>
+
+						<div class="view-all clear"><a href="#">View All &rsaquo;</a></div>
+
+						<div class="clear"></div>
+					</div><!-- col-watch-content -->
+				</div><!-- col-watch -->
+
+
+				<!-- Column Estimator #6 -->
+				<div class="column chip-estimator-banner">
+					<a href="#"><img src="img/banner_chip_esitmator_320.gif" alt="Chip Esitmator | Download Now" /></a>
+				</div>
+
+				<div class="clear"></div>
+
+			</div><!-- Pillar3 -->
+
+			<div class="adaptive-pillar1"></div>
+			<div class="adaptive-pillar2"></div>
+			<div class="column adaptive-pillar3"></div>
+
+			<div class="clear"></div>
+
+		</div><!-- content -->
+
+		<div class="clear"></div>
+
+		<div class="carousel-container">
+			<!-- our partners carousel widget -->
+			<div class="our-partners-header-bg">Our Partners</div>
+			<div class="list_carousel responsive">
+
+				<ul id="caroufredsel">
+					<!-- Add new partner logos here -->
+					<li><a href="#"><img src="img/logo_arasan.png" alt=""/></a></li>
+					<li><a href="#"><img src="img/logo_cadence.png" alt=""/></a></li>
+					<li><a href="#"><img src="img/logo_cast.png" alt=""/></a></li>
+					<li><a href="#"><img src="img/logo_arm.png" alt=""/></a></li>
+					<li><a href="#"><img src="img/logo_catena.png" alt=""/></a></li>
+					<li><a href="#"><img src="img/logo_chipstart.png" alt=""/></a></li>
+					<li><a href="#"><img src="img/logo_arasan.png" alt=""/></a></li>
+					<li><a href="#"><img src="img/logo_cadence.png" alt=""/></a></li>
+					<li><a href="#"><img src="img/logo_cast.png" alt=""/></a></li>
+					<li><a href="#"><img src="img/logo_arm.png" alt=""/></a></li>
+					<li><a href="#"><img src="img/logo_catena.png" alt=""/></a></li>
+					<li><a href="#"><img src="img/logo_chipstart.png" alt=""/></a></li>
+				</ul>
+
+				<div class="clearfix"></div>
+			</div><!-- list_carousel -->
+		</div><!-- carousel-container -->
+
+			<div class="footer">
+
+				<div class="footer-sections">
+					<div class="feedback">
+						<ul>
+							<li class="title"><a href="#">Give us your feedback</a></li>
+							<li>Integer laoreet odios sed neque. Curabitur at sapien.</li>
+							<li><a href="#">Action</a></li>
+						</ul>
+					</div>
+
+					<div class="about">
+						<ul>
+							<li class="title"><a href="#">About us</a></li>
+							<li>Integer laoreet odios sed neque. Curabitur at sapien. </li>
+							<li><a href="#">Learn More</a></li>
+						</ul>
+					</div>
+
+					<div class="partner">
+						<ul>
+							<li class="title"><a href="#">Partner with us</a></li>
+							<li>Integer laoreet odios sed neque. Curabitur at sapien. </li>
+							<li><a href="#">Learn More</a></li>
+						</ul>
+					</div>
+
+					<div class="support">
+						<ul>
+							<li class="title"><a href="#">Support</a></li>
+							<li>Integer laoreet odios sed neque. Curabitur at sapien. </li>
+							<li><a href="#">Learn More</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="social-links-container">
+					<ul>
+						<li>Find Chip Estimate At:</li>
+						<li><img src="img/logo_facebook.png">Facebook</li>
+						<li><img src="img/logo_twitter.png">Twitter</li>
+						<li><img src="img/logo_youtube.png">YouTube</li>
+						<li><img src="img/logo_linkedin.png">LinkedIn</li>
+						<li><img src="img/logo_googleplus.png">Google +</li>
+					</ul>
+					
+					<div class="clear"></div>
+				</div>
+
+				<div class="footer-copywrite">
+					ChipEstimate.com Chip Planning &amp; IP Portal -- Copyright &copy; <script>document.write(new Date().getFullYear())</script> ChipEstimate.com. All rights reserved.
+				</div>
+				
+			</div><!-- footer -->
+
+			<div class="footer-mobile">
+
+				<ul>
+					<li class="title"><a href="#">Give us your feedback</a></li>
+					<li class="title"><a href="#">About us</a></li>
+					<li class="title"><a href="#">Partner with us</a></li>
+					<li class="title"><a href="#">Support</a></li>
+
+					<div class="social-links-container">
+							Find Chip Estimate At:
+						<ul>	
+							<li><img src="img/logo_facebook.png">Facebook</li>
+							<li><img src="img/logo_twitter.png">Twitter</li>
+							<li><img src="img/logo_youtube.png">YouTube</li>
+							<li><img src="img/logo_linkedin.png">LinkedIn</li>
+							<li><img src="img/logo_googleplus.png">Google +</li>
+						</ul>
+						
+						<div class="clear"></div>
+					</div>
+
+					<li class="footer-copywrite-mobile">
+						ChipEstimate.com Chip Planning &amp; IP Portal -- Copyright &copy; <script>document.write(new Date().getFullYear())</script> ChipEstimate.com. All rights reserved.
+					</li>
+				</ul>
+				
+			</div><!-- footer-mobile -->
+
+		<!-- </div> --><!-- carousel-container -->
+
+	</div><!-- container homepage -->
+
+</body>
+</html>

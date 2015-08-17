@@ -7,7 +7,7 @@ leongaban.com version 8
 
 ![Leon Gaban](https://raw.githubusercontent.com/leongaban/leongaban-8/master/assets/imgs/logo%402x.png)
 
-<p>If the web was built with LEGO I’d probably be using those some how, I have a passion for crafting pleasing user experiences.</p>
+<p>If apps were built with LEGO I’d probably be using those some how, I have a passion for crafting pleasing user experiences.</p>
 
 <p>My code editor of choice is Sublime Text 2. For pleasure I listen to a multitude of podcasts including Radiolabs, Let's talk Bitcoin, Hardcore History and the Joe Rogan podcast, for hobbies I love training in Brazillian jui-jitsu and Bikram yoga. You can follow me on Twitter <a href="https://twitter.com/leongaban">@leongaban</a></p>
 

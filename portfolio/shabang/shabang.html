@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Welcome to Shabang </title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="" />
+
+    <!-- For Facebook -->
+    <meta property="og:image" content=""/>
+    <meta property="og:title" content="Welcome to Shabang"/>
+    <meta property="og:site_name" content="Shabang"/>
+    <meta property="og:type" content=""/>
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link href="css/shabang.css" type="text/css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
+    <![endif]-->
+    <script type='text/javascript' src="js/jquery-2.0.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.password.js"></script>
+    <script type='text/javascript' src='js/registration.js'></script>
+</head>
+
+<body>
+
+<div class="layout">
+
+    <div class="header">
+
+        <div class="head-wrapper">
+
+            <div class="navigation">
+
+                <div class="logo">
+                    <img src="img/logo.png" class="user-action" data-btn="home" data-pane="home" title="Shabang" alt="Shabang"/>
+                </div><!-- logo -->
+
+                <div class="head-search">
+                    <input class="txtinput" type="text"/>
+                    <a href="#"><img src="img/search_button.png" alt="search"/></a>
+                </div><!-- head-search -->
+
+                <div class="search_view_selection">
+                    <div class="search-view-text">View:</div> <select id="search-dropdown" sb="83369732" style="display: block;">
+                        <option value="1" selected="selected">Everything</option>
+                        <option value="2" selected="selected">Something</option>
+                        <option value="3" selected="selected">Nothing</option>
+                    </select>
+                </div><!-- search_view_selection -->
+
+                <div id="user-actions">
+                    <ul>
+                        <li class="btn-blue user-action" data-btn="login" data-pane="login">Log In</li>
+                        <li class="btn-purple user-action" data-btn="signup" data-pane="signup">Sign Up</li>
+                    </ul>
+                </div><!-- user-actions -->
+
+                <div id="search-745-div">
+                    <div id="search-field-745">
+                        <input class="search745" type="text">
+                    </div>
+                    <div id="search-btn-745" class="user-action" data-btn="search">
+                        <img src="img/search_button_big.png" alt="search"/>
+                    </div>
+                </div>
+
+            </div><!-- navigation -->
+
+            <div class="options">
+                <div class="logo-mobile">
+                    <img src="img/logo.png" class="user-action" data-btn="home" data-pane="home" title="Shabang" alt="Shabang"/>
+                </div><!-- logo -->
+
+                <div class="mobile-640-nav">
+                    <div id="search-btn-640" class="user-action" data-btn="search-mobile">
+                        <img src="img/search-btn-mobile.png" alt="search"/>
+                    </div>
+
+                    <div class="btn-blue user-action mobile-user-options" data-btn="mobile-user-options" data-pane="home">
+                        <img src="img/mobile-profile-head-icon.png" title="Options" alt="Options"/>
+                    </div>
+                </div><!-- mobile-640-nav -->
+            </div><!-- options -->
+
+            <div class="options-menu">
+                <ul>
+                    <li class="btn-blue">My Profile</li>
+                    <li class="btn-blue">Privacy</li>
+                    <li class="btn-blue">Logout</li>
+                </ul>
+            </div>
+
+            <div class="options-search">
+                <div class="options-search-dropdown-mobile">
+                    <div class="search-view-text" style="float:left; color:#333;">View: </div> <select id="search-dropdown" sb="83369732" style="display: block;">
+                        <option value="1" selected="selected">Everything</option>
+                        <option value="2" selected="selected">Something</option>
+                        <option value="3" selected="selected">Nothing</option>
+                    </select>
+                </div>
+
+                <div class="options-search-bar">
+                    <div class="options-search-bar-left">
+                        <input class="mobile-search-input" type="text"/>
+                    </div>
+
+                    <div class="options-search-bar-right">
+                        <img src="img/search-btn-mobile.png" alt="search"/>
+                    </div>
+                </div>
+            </div><!-- options-search -->
+
+        </div><!-- head-wrapper -->
+
+    <div class="header-bot-border"></div>
+    </div><!-- header -->
+
+    <div id="UpdatePanel">
+
+        <div id="panel-signup" class="registration-page" style="display:block;">
+
+            <div class="page-header">
+                <h1>Choose Your Role</h1>
+                <p>Shabang has something for everyone; Select a role that best describes you. If you aren't sure we suggest you start as a Fan. You can always upgrade later.</p>
+            </div>
+
+            <div class="page-content">
+                <ul id="user-options">
+                    <li>
+                        <img class="role-photo" src="img/registration_fan_tile.png" alt="Fan"/>
+                        
+                        <h3>Fan</h3>
+                        <p>Calling all tastemakers! Influence Hollywood, don't just consume it. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </li>
+
+                    <li style="">
+                        <div class="role-card-talent user-action" data-btn="form" data-pane="form" style="position: relative;">
+                            <img class="role-photo" src="img/registration_talent_tile.png" alt="Talent"/>
+                            
+                            <!-- Hover Controls -->
+                            <div class="hover_controls_talent" style="display:none;">
+
+                                <a href="#" class="fbLoginBtn"><img class="fb-signin" src="img/registration_signin_fb.png"></a>
+                                
+                                <!-- This button shows FORM -->
+                                <a href="#" onclick=""><img class="shabang-signin" alt="Submit" src="img/registration_signup_shabang.png" ></a>
+
+                                <div class="learn_about_pages learnMoreLink" tag="" style="margin:10px">
+                                    <a href="#"><img src="img/registration_info_icon.png">Learn More</a>
+                                </div>
+
+                            </div><!-- hover_controls -->
+                        </div><!-- role-card-talent -->
+                        
+                        <h3>Talent</h3>
+                        <p>Oh, Hai! Now you are on your way to being "connected." You're welcome. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </li>
+
+                    <li>
+                        
+                        <img class="role-photo" src="img/registration_entertainment_exec_tile.png" alt="Entertainment Exec"/>
+                        
+                        <h3>Entertainment Exec</h3>
+                        <p>
+                            Track the buzz on unsigned Talent better than a room full of assistants could. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </li>
+                    <li>
+                        
+                        <img class="role-photo" src="img/registration_brand_exec_tile.png" alt="Brand Exec"/>
+                        <h3>Brand Exec</h3>
+                        <p>
+                            Calling all tastemakers! Influence Hollywood, don't just consume it. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div><!-- panel-signup -->
+
+<!--
+
+.____                 .__        
+|    |    ____   ____ |__| ____  
+|    |   /  _ \ / ___\|  |/    \ 
+|    |__(  <_> ) /_/  >  |   |  \
+|_______ \____/\___  /|__|___|  /
+        \/    /_____/         \/
+-->
+        <!-- THE FORM -->
+        <div id="panel-login" class="registration-page" style="display:none;">
+
+            <div class="page-header">
+                <div class="page-description">
+                    <h1>Login</h1>
+                    <p>Lorem Ipsum</p>
+                </div>
+
+            </div>
+
+            <!-- QA and remove comment -->
+            <div class="form-login clearfix">
+                <div class="form-line">
+                    <div class="form-labels">
+                        <label class="form-label-email" for="name">Email</label>
+                    </div>
+
+                    <div class="form-input">
+                        <input type="text" name="email" class="long-form" id="email" value="" tabindex="1">
+                    </div>
+                </div>
+
+                <div class="form-line">
+                    <div class="form-labels">
+                        <label class="form-label-password" for="name">Password</label>
+                    </div>
+                    
+                    <div class="form-input">
+                        <input type="text" name="password" class="long-form" id="password" value="" tabindex="1">
+                    </div>
+                </div>
+
+            </div><!-- form-wrapper -->
+
+            <div class="registration-login">
+                <div class="next-button btn-purple user-action" data-btn="photo_upload" data-pane="photo_upload" id="">Next</div>
+                <!-- After Validation Add class btn-purple-->
+                <!-- <div class="next-button btn-purple">Next</div> -->
+            </div>
+            
+
+        </div><!-- panel-login -->
+
+<!--
+
+___________                   
+\_   _____/__________  _____  
+ |    __)/  _ \_  __ \/     \ 
+ |     \(  <_> )  | \/  Y Y  \
+ \___  / \____/|__|  |__|_|  /
+     \/                    \/
+-->
+        <!-- THE FORM -->
+        <div id="panel-signup2-form" class="registration-page" style="display:none;">
+
+            <div class="page-header">
+                <div class="page-description">
+                    <h1>Basic Info</h1>
+                    <p>We only need some basic information to get you registered.</p>
+                </div>
+
+                <div class="pagination">
+                    <div class="selected page">1</div>
+                    <div class="page">2</div>
+                    <div class="page">3</div>
+                </div>
+            </div>
+
+<div class="form-wrapper clearfix">
+
+    <!-- The Form -->
+    <form id="shabangForm" action="#" method="post">
+
+        <div class="form-line">
+            <div class="form-labels label-home-name">
+                <label class="form-label-name" for="name">Profile Name</label>
+            </div>
+
+            <div class="form-input first-form-input">
+
+                <!-- Validation Profile Name -->
+                <div class="validate-div">
+                    <div class="validPName" style="display:none;">
+                        <img src="img/registration_validation_check.png"/>
+                    </div>
+                    <div class="invalidPName" style="display:none;">
+                        <img src="img/registration_validation_invalid.png" />
+                    </div>
+                    <div class="instructionPName" style="display:none;">1-26 alphanumeric characters</div>
+                </div>
+
+                <div class="input-div">
+                    <input type="text" name="name" class="long-form" id="profileName" value="" tabindex="1">
+                </div>
+
+            </div><!-- form-input -->
+
+        </div><!-- form-line -->
+
+        <div class="form-line">
+            <div class="form-labels label-home-email">
+                <label class="form-label-email" for="name">Email</label>
+            </div>
+
+            <div class="form-input">
+
+                <!-- Validation Email -->
+                <div class="validate-div">
+                    <div class="validEmail" style="display:none;">
+                        <img src="img/registration_validation_check.png"/>
+                    </div>
+                    <div class="invalidEmail" style="display:none;">
+                        <img src="img/registration_validation_invalid.png" />
+                    </div>
+                    <div class="instructionEmail" style="display:none;">Provide a valid email address</div>
+                </div>
+
+                <div class="input-div">
+                    <input type="text" name="email" class="long-form" id="formEmail" value="" tabindex="2">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="form-line">
+            <div class="form-labels label-home-firstlast">
+                <label class="form-label-firstlast" for="name">First/Last Name</label>
+            </div>
+
+            <div class="form-input">
+
+                <!-- Validation First Last Name -->
+                <div class="validate-div">
+                    <div class="validfirstName" style="display:none;">
+                        <img src="img/registration_validation_check.png"/>
+                    </div>
+                    <div class="invalidfirstName" style="display:none;">
+                        <img src="img/registration_validation_invalid.png" />
+                    </div>
+                    <div class="instructionFirstName" style="display:none;">Enter 1 - 26 alpha characters only</div>
+                </div>
+
+                <div class="input-div">
+                    <input type="text" id="firstName" name="first-name" class="short-form firstname" autocomplete="off" value=" " tabindex="3">
+                    <input type="text" id="lastName" name="last-name" class="short-form lastname" autocomplete="off" value=" " tabindex="4">
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="form-line">
+            <div class="form-labels label-home-password">
+                <label class="form-label-password" for="name">Password</label>
+            </div>
+            
+            <div class="form-input">
+
+                <!-- Validation Password -->
+                <div class="validate-div">
+                    <div class="validPassword" style="display:none;">
+                        <img src="img/registration_validation_check.png"/>
+                    </div>
+                    <div class="invalidPassword" style="display:none;">
+                        <img src="img/registration_validation_invalid.png" />
+                    </div>
+                    <!-- <div class="instructionPassword" style="display:none;">1Enter 6 -18 alphanumeric characters only, including at least 1 number</div> -->
+
+                    <div class="password-meter">
+                        <div class="password-meter-message"></div>
+                        <div class="password-meter-bg">
+                            <div class="password-meter-bar"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="input-div">
+                    <input type="password" id="password1" name="password" class="long-form" value="" autocomplete="off" tabindex="5">
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="form-line">
+            <div class="form-labels label-home-password2">
+                <label class="form-label-password2" for="name">Retype Password</label>
+            </div>
+
+            <div class="form-input">
+
+                <!-- Validation Password 2 -->
+                <div class="validate-div">
+                    <div class="validPassword2" style="display:none;">
+                        <img src="img/registration_validation_check.png"/>
+                    </div>
+                    <div class="invalidPassword2" style="display:none;">
+                        <img src="img/registration_validation_invalid.png" />
+                    </div>
+                    <div class="instructionPassword2" style="display:none;">Match the entry for password</div>
+                </div>
+
+                <div class="input-div">
+                    <input id="password2" type="password" name="confirm_password" value="" autocomplete="off" tabindex="6">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="form-line">
+            <div class="form-labels label-home-date">
+                <label class="form-label-date" for="name">Date of Birth
+                <br/>
+                <a href="/faq.aspx" class="moreLink" target="_blank" title="Click to view faq">Why we need this?</a></label>
+            </div>
+
+            <div class="form-input">
+
+                <!-- Validation Date -->
+                <div class="validate-div">
+                    <div class="validDate" style="display:none;">
+                        <img src="img/registration_validation_check.png"/>
+                    </div>
+                    <div class="invalidDate" style="display:none;">
+                        <img src="img/registration_validation_invalid.png" />
+                    </div>
+                    <div class="instructionDate" style="display:none;">Shabang requires that all users must be at least 13 years of age and older</div>
+                </div>
+
+                <div class="input-div">
+
+                    <select name="bMonth" class="month" id="bMonth" tabindex="7">
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+
+                    <select id="bDay" class="day" name="day" tabindex="8">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+
+                    <select id="bYear" class="year" name="year" tabindex="9"></select>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- GENDER -->
+        <div class="form-line">
+            <div class="form-labels label-home-gender">
+                <label class="form-label-gender" for="name">Gender</label>
+            </div>
+
+            <div class="form-input">
+
+                <div class="validate-div">
+                    <div class="validGender" style="display:none;">
+                        <img src="img/registration_validation_check.png"/>
+                    </div>
+                    <div class="invalidGender" style="display:none;">
+                        <img src="img/registration_validation_invalid.png" />
+                    </div>
+                    <div class="instructionGender" style="display:none;">Please select a gender</div>
+                </div>
+
+                <div class="input-div">
+                    <select id="gender" class="gender" name="gender" tabindex="10">
+                        <option value="select" disabled="" selected="">Please Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Band/Group/Company">Band/Group/Company</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- LOCATION -->
+        <div class="form-line">
+            <div class="form-labels label-home-location">
+                <label class="form-label-location" for="name">Location</label>
+            </div>
+
+            <div class="form-input">
+
+                <div class="validate-div">
+                    <div class="validLocation" style="display:none;">
+                        <img src="img/registration_validation_check.png"/>
+                    </div>
+                    <div class="invalidLocation" style="display:none;">
+                        <img src="img/registration_validation_invalid.png" />
+                    </div>
+                    <div class="instructionLocation" style="display:none;">Begin typing the city, then select from the choices</div>
+                </div>
+
+                <div class="input-div">
+                    <input type="text" name="location" class="long-form" id="location" value="" tabindex="11">
+                </div>
+
+                <div class="dLocationList" style="width:287px; padding:0px; display:none;background:white;">
+
+                <div class="rProgress" style="display:none;float:left;background:#fff;width:auto;padding:8px;line-height:20px"><img src="img/ajax-loader.gif" style="float:left;margin-right:8px" />Loading...</div>
+
+                <ul id="locationsList" style="margin:0px;border:none;display:none;padding:0px"><li>Testing</li></ul>
+            </div>
+
+            </div>
+        </div>
+
+    </form>
+
+</div><!-- .form-wrapper -->
+
+            <div class="registration-navigation">
+                <div class="back-button">« back</div>
+                <!-- This should have class btn-gray, when the form is finished validating class btn-purple then should be added -->
+                <div class="next-button btn-purple" id="firstNextButton">Next</div>
+                <!-- After Validation Add class btn-purple-->
+                <!-- <div class="next-button btn-purple">Next</div> -->
+            </div>
+
+        </div><!-- #panel-signup2-form -->
+
+    </div>
+
+</div><!-- layout -->
+
+<div id="footer">
+
+    <div id="footer-nav">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p id="copyright">&copy;<script>document.write(new Date().getFullYear())</script> Copyright Shabang, Inc.</p>
+    </div><!-- footer-nav -->
+
+</div><!-- footer -->
+
+</body>
+</html>

@@ -1,0 +1,435 @@
+
+/* BASIC TYPOGRAPHY */
+
+html { font-size: 62.5%; font-family:Arial, Helvetica, sans-serif; }
+strong, th, thead td, h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+cite, em, dfn { font-style: italic; }
+code, kbd, samp, pre, tt, var, input[type='text'], textarea { font-size: 92%; font-family: monaco, "Lucida Console", courier, monospace; }
+del { text-decoration: line-through; color: #666; }
+ins, dfn { border-bottom: 1px solid #ccc; }
+small, sup, sub { font-size: 85%; }
+abbr, acronym { text-transform: uppercase; font-size: 85%; letter-spacing: .1em; }
+a abbr, a acronym { border: none; }
+abbr[title], acronym[title], dfn[title] { cursor: help; border-bottom: 1px solid #ccc; }
+sup { vertical-align: super; }
+sub { vertical-align: sub; }
+.floatRight{
+float:right;
+}
+
+
+/* BASE SIZES */
+
+.container { font-size: 1.2em; line-height: 1.6em; }
+/* TABLES */
+
+.container table { border-top: 1px solid #ccc;  border-left: 1px solid #ccc; }
+.container th, .container td { border-bottom: 1px solid #ddd; border-right: 1px solid #ccc; }
+
+
+
+/* COLORS */
+
+.container a:link { text-decoration: underline; color: #ff6699; }
+.container a:visited { text-decoration: underline; color: #99c; }
+.container a:hover { text-decoration: underline; color: #336633;}
+.container a:active, .container a:focus { text-decoration: underline; color: #000; }
+.container code, .container pre { color: #c33; } /* very optional, but still useful. W3C uses about the same colors for codes */
+
+/* 24 COLUMN GRID */
+
+body {margin:1.5em 0;}
+
+.clearfix:after, .container:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
+* html .clearfix, * html .container {height:1%;}
+.clearfix, .container {display:block;}
+.clear {clear:both;}
+
+/* to create serif italic dramatic text, use this class */
+.fancy { 
+  color: #666; 
+  font-family: "Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua", Georgia, serif; 
+  font-style: italic;
+  font-weight: normal;
+}  
+
+/* creates small caps */
+.caps { 
+  font-variant: small-caps; 
+  letter-spacing: 1px; 
+  text-transform: lowercase; 
+  font-size:1.2em;
+  font-weight:bold;
+  padding:0 2px;
+}
+
+/* TEXT CLASSES */
+
+.container .small {font-size:.8em;margin-bottom:1.875em;line-height:1.875em;}
+.container .large {font-size:1.2em;line-height:2.5em;margin-bottom:1.25em;}
+.container .hide {display:none;}
+.container .quiet {color:#666;}
+.container .loud {color:#000;}
+.container .highlight {background:#ff0;}
+.container .top {margin-top:0;padding-top:0;}
+.container .bottom {margin-bottom:0;padding-bottom:0;}
+.container .thin {font-weight: lighter;}
+.container .error, .container .notice, .container .success {padding:.8em;margin-bottom:1.6em;border:2px solid #ddd;}
+.container .error {background:#FBE3E4;color:#8a1f11;border-color:#FBC2C4;}
+.container .notice {background:#FFF6BF;color:#514721;border-color:#FFD324;}
+.container .success {background:#E6EFC2;color:#264409;border-color:#C6D880;}
+.container .error a {color:#8a1f11; background:none; padding:0; margin:0; }
+.container .notice a {color:#514721; background:none; padding:0; margin:0; }
+.container .success a {color:#264409; background:none; padding:0; margin:0; }
+.container .center {text-align: center;}
+
+
+/*Komen Style */
+
+/* -------------------------- Layout Home ----------------------------- */
+
+body#home{
+background: url(../images/topGradient.jpg) top repeat-x #669933;
+margin:0px;
+}
+body#home .container {width:960px;
+	height: auto !important;
+	margin: 0 auto; 
+	background:url(../images/top-bkg.jpg) no-repeat top;
+}
+body#home #backfix{
+background: url(../images/topGradient.jpg) top repeat-x #c8df8f;
+z-index:-10;
+}
+/* --------------------------/ Layout Home ----------------------------- */
+/* -------------------------- Layout Secondary ------------------------- */
+body#secondary{
+background: url(../images/sec-topGrad.jpg) top repeat-x #c8df90;
+margin:0px;
+}
+body#secondary .container {width:960px;
+	height: auto !important;
+	margin: 0 auto; 
+	background:#fff;
+}
+body#secondary #backfix{
+background: url(../images/sec-topGrad.jpg) top repeat-x #fff;
+z-index:-10;
+}
+/* -------------------------- / Layout Secondary------------------------- */
+.container h1 {
+	display:block;
+	width:173px;
+	height:83px;
+	text-indent:-9009px;
+	background:transparent url(../images/race-for-the-cure.png) no-repeat 0 0;
+	margin:20px 0px 0px 52px;
+	padding:0px;
+	float:left;
+}
+.container h1 a {
+	display:block;
+	width:100%;
+	height:100%;
+	outline:none;
+	margin:0px;
+	padding:0px;
+}
+
+#home #main-nav, #secondary #main-nav {
+	float:left;
+	clear:left;
+	width:225px;
+	text-align:right;
+	margin:0px;
+	padding:0px;
+	margin-top:123px;
+}
+#secondary #main-nav{
+margin-top:20px;
+background:url(../images/divider.jpg) no-repeat right top;
+}
+#secondary #content{
+margin-top:20px;
+
+}
+#main-nav ul{
+padding:0px;
+margin:0px;
+
+}
+#main-nav ul li{
+list-style-type:none;
+font-size:14px;
+text-transform:uppercase;
+font-weight:bold;
+letter-spacing:0.10em;
+padding:0px;
+margin:0px;
+}
+#secondary #main-nav ul li{
+padding:10px 20px 12px 0px;
+text-align:right;
+width:215px;
+
+}
+#main-nav ul li a{
+color:#336633;
+text-decoration:none;
+padding:10px 20px 12px 0px;
+float:right;
+width:195px;
+margin:0px;
+}
+#secondary #main-nav ul li a{
+float:none;
+text-align:right;
+}
+#home #main-nav ul li a:hover {
+color:#ff6699;
+background:transparent url(../images/rollover_nav.png) right no-repeat ;
+}
+#secondary #main-nav ul li a:hover {
+color:#ff6699;
+background:none;
+}
+#secondary #main-nav ul li a.active{
+color:#ff6699;
+}
+html, body {
+	height: 100%;
+}
+#content{
+float:right;
+width:725px;
+clear:none;
+}
+#flashContent {
+margin:0px;
+padding:0px;
+}
+#main-content, #main-content-links, #frames-content, #chant-content{
+width:495px;
+padding-right:10px;
+padding-left:10px;
+float:left;
+background:url(../images/divider.jpg) no-repeat right top;
+color:#666666;
+}
+#main-content p, #main-content-links p, #frames-content p, #chant-content p{
+padding-right:15px;
+}
+#frames-content{
+width:300px;
+}
+#chant-content{
+width:325px;
+}
+#main-content-links{
+width:280px;
+}
+#side-link{
+width:160px;
+float:left;
+clear:none;
+padding-right:30px;
+background:url(../images/divider.jpg) no-repeat right top;
+}
+#side-link a{
+background:url(../images/link-bkg_07.png) no-repeat;
+float:left;
+width:153px;
+height:43px;
+margin-left:10px;
+padding:12px 0px 0px 30px;
+color:#FFFFFF;
+text-decoration:none;
+font-weight:bold;
+}
+#side-content, #frames-widget, #chant-widget{
+width:150px;
+float:right;
+clear:none;
+padding-right:30px;
+}
+#frames-widget{
+width:353px;
+}
+#chant-widget{
+width:332px;
+}
+#chant-widget h2{
+color:#336633;
+font-size:14px;
+margin-bottom:0px;
+padding-bottom:0px;
+clear:both;
+}
+
+#side-content a, #main-content a{
+color:#ff6699;
+text-decoration:none;
+font-weight:bold;
+}
+#main-content h2, .ques, #frames-content h2, #chant-content h2{
+color:#336633;
+font-size:14px;
+margin-bottom:0px;
+padding-bottom:0px;
+}
+.ques{
+font-size:12px;
+}
+.optintro{
+
+}
+#side-content h2{
+color:#ff6699;
+text-transform:uppercase;
+font-size:14px;
+}
+
+#main-content p.callout{
+height:109px;
+width:484px;
+background:url(../images/callout.jpg) no-repeat;
+text-align:center;
+padding:25px 15px 15px 15px;
+color:#ff6699;
+text-transform:uppercase;
+font-weight:bold;
+}
+
+#main-content a.download{
+background:url(../images/file-bkg.png) no-repeat left;
+padding:10px 30px 10px 30px;
+}
+#main-content a.mock {
+padding:10px 0px 10px 30px;
+}
+#divquiz{
+background:url(../images/quiz-bkg.png) no-repeat bottom right;
+padding-bottom:30px;
+}
+.optintro{
+background:url(../images/quiz-bkg-opt1.png) no-repeat top right;
+padding-bottom:15px;
+padding-top:10px;
+}
+#optquiz{
+background:url(../images/quiz-bkgoptin2.png) no-repeat bottom right;
+padding-bottom:15px;
+padding-top:10px;
+float:left;
+}
+.ques-o{
+color:#336633;
+font-size:12px;
+float:left;
+width:250px;
+clear:none;
+
+}
+.divw300{
+width:100px;
+float:left;
+clear:none;
+margin-top:10px;
+}
+.quizSubmit {
+float:right;
+margin-right:25px;
+}
+
+/* -------------------------- Login ----------------------------- */
+#login{
+float:right;
+clear:none;
+background: url(../images/login-bkg.png) no-repeat bottom;
+color:#FFFFFF;
+font-size:16px;
+font-weight:bold;
+width:227px;
+}
+
+.log-txt{
+margin:0px;
+text-align:left;
+padding:2px 0px 5px 10px;
+}
+#login .log-txt a{
+font-size:14px;
+font-weight:bold;
+color:#336633;
+text-transform:uppercase;
+text-decoration:none;
+padding:0px 4px;
+letter-spacing:0.05em;
+}
+#loginInput{
+display:none;
+}
+/* -------------------------- / Login ----------------------------- */
+
+
+
+/* ----------------------------Footer-----------------------------------*/
+
+#home #home-footer{
+display:block;
+clear:both;
+background: url(../images/bottomGradient.jpg) bottom repeat-x #c8df90;
+height: 216px; 
+}
+#secondary #home-footer{
+display:block;
+clear:both;
+background: url(../images/sec-bottomGrad.jpg) bottom repeat-x #c8df90;
+height: 216px; 
+}
+#home-footer ul, #home-footer p {
+width:960px;margin:0 auto;
+text-align:center;
+}
+#home-footer ul li{
+list-style-type:none; 
+display:inline;
+text-transform:lowercase;
+font-size:16px;
+}
+#home #home-footer ul li{
+color:#FFFFFF;
+}
+#secondary #home-footer ul li{
+color:#336633;
+}
+
+#home-footer ul{
+padding-top:60px;
+}
+#home-footer ul li a{
+font-size:14px;
+text-decoration:none;
+color:#336633;
+padding:0px 10px 0px 10px;
+letter-spacing:0.08em;
+}
+#home-footer ul li a:hover{
+color:#ff6699;
+}
+#home-footer ul li a.active{
+color:#ff6699;
+}
+#home-footer p{
+color:#f0f0f0;
+font-size:14px;
+margin-top:10px;
+font-weight:bold;
+}
+#secondary #home-footer p{
+color:#666666;
+font-size:12px;
+margin-top:10px;
+font-weight:normal;
+}
+/* ---------------------------- /Footer-----------------------------------*/
