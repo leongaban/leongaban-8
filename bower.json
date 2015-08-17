@@ -1,11 +1,10 @@
 {
-  "name": "mean",
+  "name": "Leon Gaban versino 8",
+  "keywords": [
+    "leongaban",
+    "portfolio"
+  ],
   "dependencies": {
-    "angular": "1.3.2",
-    "angular-resource": "1.3.2",
-    "angular-cookies": "1.3.2",
-    "angular-route": "1.3.2",
-    "bootstrap": "3.1.1",
-    "angular-ui-router": "#master"
+    "sass-smacss": "~0.1.1"
   }
 }

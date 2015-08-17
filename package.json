@@ -1,64 +1,38 @@
 {
-  "name": "leongaban.com",
-  "description": "LeonGaban.com version 8 built on the MEAN stack",
-  "version": "0.4.3",
-  "private": false,
-  "author": "Leon Gaban <leongaban@gmail.com>",
+  "name": "Leon Gaban version 8",
+  "version": "8.0.0",
+  "description": "Leon Gaban",
   "repository": {
     "type": "git",
-    "url": "https://github.com/linnovate/mean.git"
+    "url": "https://github.com/leongaban/leongaban-8.git"
   },
-  "engines": {
-    "node": "0.10.x",
-    "npm": "1.3.x"
-  },
-  "scripts": {
-    "start": "node server",
-    "mocha": "node node_modules/.bin/mocha packages/**/server/tests/**/*.js -R spec -r tools/test/mocha-req.js",
-    "karma": "node node_modules/karma/bin/karma start",
-    "test": "npm run mocha && npm run karma",
-    "postinstall": "node node_modules/meanio/node_modules/mean-cli/bin/mean-postinstall"
+  "keywords": [
+    "leon gaban",
+    "portfolio"
+  ],
+  "authors": [
+    "Leon Gaban <leon@tickertags.com>"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^1.1.1",
+    "event-stream": "^3.3.0",
+    "gulp": "^3.8.11",
+    "gulp-angular-templatecache": "^1.7.0",
+    "gulp-cachebust": "0.0.5",
+    "gulp-concat": "^2.5.2",
+    "gulp-html-replace": "^1.5.1",
+    "gulp-if": "^1.2.5",
+    "gulp-ruby-sass": "^1.0.0-alpha.3",
+    "gulp-sourcemaps": "^1.5.0",
+    "gulp-strip-debug": "^1.0.2",
+    "gulp-uglify": "^1.1.0",
+    "gulp-util": "^3.0.4",
+    "run-sequence": "^1.0.2",
+    "streamqueue": "^0.1.3"
   },
   "dependencies": {
-    "body-parser": "1.10.0",
-    "express": "4.11.1",
-    "mongoose": "3.8.21",
-    "morgan": "1.5.0",
-    "ms": "0.6.2",
-    "nodemailer": "1.2.2"
-  },
-  "devDependencies": {
-    "expect.js": "0.3.1",
-    "karma": "0.12.28",
-    "karma-chrome-launcher": "0.1.7",
-    "karma-coffee-preprocessor": "0.2.1",
-    "karma-coverage": "0.2.7",
-    "karma-firefox-launcher": "0.1.3",
-    "karma-html2js-preprocessor": "0.1.0",
-    "karma-jasmine": "0.2.3",
-    "karma-ng-html2js-preprocessor": "0.1.2",
-    "karma-ng-scenario": "0.1.0",
-    "karma-phantomjs-launcher": "0.1.4",
-    "karma-requirejs": "0.2.2",
-    "karma-script-launcher": "0.1.0",
-    "mocha": "2.1.0",
-    "requirejs": "2.1.15",
-    "supertest": "0.11.0",
-    "del": "^0.1.3",
-    "gulp": "^3.8.8",
-    "gulp-concat": "^2.4.1",
-    "gulp-csslint": "^0.1.5",
-    "gulp-cssmin": "^0.1.6",
-    "gulp-jshint": "^1.8.5",
-    "gulp-less": "^1.3.6",
-    "gulp-livereload": "^2.1.1",
-    "gulp-load-plugins": "^0.7.0",
-    "gulp-mocha": "^1.1.0",
-    "gulp-nodemon": "^1.0.4",
-    "gulp-rimraf": "^0.1.1",
-    "gulp-uglify": "^1.0.1",
-    "gulp-util": "^3.0.1",
-    "jshint-stylish": "^1.0.0",
-    "through": "^2.3.6"
+    "es6-shim": "^0.30.0",
+    "lodash": "^3.9.1"
   }
 }
