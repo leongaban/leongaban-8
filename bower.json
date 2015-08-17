@@ -5,6 +5,6 @@
     "portfolio"
   ],
   "dependencies": {
-    "sass-smacss": "~0.1.1"
+    "sass-smacss": "~0.1.3"
   }
 }

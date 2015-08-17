@@ -33,7 +33,9 @@ node_modules/
 # --------------------
 # Bower Files
 # --------------------
-.bower-*/
+.bower-cache/
+.bower-registry/
+.bower-tmp/
 .bowerrc
 bower_components
 
